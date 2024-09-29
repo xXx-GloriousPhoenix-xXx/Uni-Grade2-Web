@@ -1,0 +1,176 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #111111;
+}
+
+th.main-th, .header, .footer, .field-x, .field-y {
+    border-radius: 2vw;
+    border: 0.2vw black solid;
+    background-color: #222222;
+}
+
+
+.header, .footer {
+    height: calc(25% - 0.2vw);
+}
+.main-content {
+    width: 100%;
+    height: calc(50% - 0.2vw);
+}
+.header-content, .footer-content {
+    width: 100%;
+    height: 100%;
+}
+.field-th {
+    width: 25%;
+    height: 100%; 
+}
+.field-x-div, .field-y-div {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.field-x, .field-y {
+    width: 80%;
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.field-x, .field-y{
+    background-color: black;
+}
+.white-span {
+    color: white;
+}
+.orange-span {
+    color: black; 
+    background-color: orange; 
+    padding: 2%; 
+    border-radius: 1vw;
+}
+.links-list-div, .links-list {
+    height: 100%;   
+    margin: 0;
+    padding: 0;
+}
+li {
+    background-color: black;
+    color: white;   
+    border-radius: 2vw;
+    height: calc((100% - 7%) / 6);
+    margin: 1%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links-list-top, .links-list-bottom {
+    width: 95%;
+    margin: 1% 2.5% 1% 2.5%;
+}
+
+li.page-link:hover {
+    background-color: orange;
+    color: black;
+    box-shadow:0px 0px 0px 0.2vw black inset;
+}
+li.current-page, li.current-page:hover {
+    background-color: orange;
+    color: black;
+    box-shadow:0px 0px 0px 0.2vw black inset;
+    font-size: 2vw;
+}
+.item-2 {
+    padding: 0;
+}
+a {
+    white-space: nowrap;
+    text-decoration: none;
+    color: white;
+}
+li.current-page {
+    color: black;
+}
+
+.item-1.white-span, .item-6.white-span {
+    font-size: 2.3vw;
+}
+.item-2, .item-5 {
+    width: 25%;
+}
+.item-4 {
+    width: 50%;
+}
+.item-3 {
+    width: 75%;
+    height: calc(100% / 6);
+}
+
+th {
+    font-size: 1.5vw; 
+}
+.field-x {
+    font-size: 2.5vw;
+}
+
+.language-logo-table, .application-logo-table {
+    width: 100%;
+    height: 100%;
+}
+
+.language-info-div {
+    margin: 0;
+}
+.language-logo, .application-logo {
+    width: 15vh;
+    height: 15vh;
+    object-fit: contain;
+}
+.item-4, .item-5 {
+    padding: 1vw;
+}
+img.curr-logo, img.curr-logo-left, img.curr-logo-right {
+    float: top;
+    margin: 0.75vw;
+    width: 10%;
+    position: relative;
+}
+img.curr-logo, img.curr-logo-left {
+    float: left;
+}
+img.curr-logo-right {
+    float: right;
+}
+div.curr-info {
+    text-align: justify;
+}
+div.curr-experience {
+    text-align: center;
+}
+
+a.codewars-link {
+    background-color: black;
+    color: white;   
+    border-radius: 2vw;
+    height: auto;
+    margin: 1%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a.codewars-link:hover {
+    background-color: orange;
+    color: black;
+    box-shadow:0px 0px 0px 0.2vw black inset;
+}
