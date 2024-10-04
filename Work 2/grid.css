@@ -1,47 +1,57 @@
 /*Main sizing*/
-html, body, #container {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;}
 body {
-    display: flex;
-    flex-direction: column;
-    min-width: calc(100dvw / 3);
-    min-height: calc(100dvh / 3);}
+  margin: 0;
+}
 
 /*Grid configuration*/
 #container {
-    display: grid;
-    grid-template-rows: repeat(12, 1fr);
-    grid-template-columns: repeat(12, 1fr);}
-#item-1 {
-    grid-area: 1 / 1 / span 3 / span 12;
-    background-color: rgb(198, 217, 241);}
-#item-2 {
-    grid-area: 4 / 1 / span 6 / span 3;
-    background-color: rgb(253, 233, 217);}
-#item-3 {
-    grid-area: 4 / 4 / span 1 / span 9;
-    background-color: rgb(234, 241, 221);}
-#item-4 {
-    grid-area: 5 / 4 / span 5 / span 6;
-    background-color: ivory}
-#item-5 {
-    grid-area: 5 / 10 / span 5 / span 3;
-    background-color:rgb(253, 233, 217);}
-#item-6 {
-    grid-area: 10 / 1 / span 3 / span 12;
-    background-color: rgb(198, 217, 241);}
-#item-x {
-    grid-area: 2 / 2 / span 1 / span 3;
-    background-color: ivory;}
-#item-y {
-    grid-area: 11 / 9 / span 1 / span 3;  
-    background-color: ivory;}
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  min-height: 100dvh;
+}
+
+.item-1 {
+  grid-area: 1 / 1 / span 3 / span 12;
+  background-color: rgb(198, 217, 241);
+}
+
+.item-2 {
+  grid-area: 4 / 1 / span 6 / span 3;
+  background-color: rgb(253, 233, 217);
+}
+
+.item-3 {
+  grid-area: 4 / 4 / span 1 / span 9;
+  background-color: rgb(234, 241, 221);
+}
+
+.item-4 {
+  grid-area: 5 / 4 / span 5 / span 6;
+  background-color: ivory;
+}
+
+.item-5 {
+  grid-area: 5 / 10 / span 5 / span 3;
+  background-color: rgb(253, 233, 217);
+}
+
+.item-6 {
+  grid-area: 10 / 1 / span 3 / span 12;
+  background-color: rgb(198, 217, 241);
+}
+
+.item-x {
+  grid-area: 2 / 2 / span 1 / span 3;
+  background-color: ivory;
+}
+
+.item-y {
+  grid-area: 11 / 9 / span 1 / span 3;
+  background-color: ivory;
+}
 
 /*Main border configuration*/
-    #item-1, #item-2, #item-3, #item-4, #item-5, #item-6, #item-x, #item-y {
-    border: min(0.3vw, 0.3vh) solid black;} 
-
-
+.item {
+  border: min(0.3vw, 0.3vh) solid black;
+}
