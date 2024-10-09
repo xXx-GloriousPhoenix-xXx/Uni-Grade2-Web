@@ -56,3 +56,29 @@ body {
   border: min(0.3vw, 0.3vh) solid black;
 }
 
+.item-x, .item-y, .item-2, .item-4, .item-5, .item-6 {
+  text-align: left;
+}
+.item-1, .item-3 {
+  align-content: right;
+}
+.item {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  font-size: 1vw;
+}
+
+div.hub-logo-style {
+  margin: 1;
+  background-color: black;
+  flex-wrap: nowrap;
+}
+div.hub-logo-style .white-label {
+  margin: 0.25%;
+  color: black;
+  background-color: orange;
+}
+div.hub-logo-style .orange-label {
+  color: ivory;
+}
