@@ -1,0 +1,7 @@
+C# is a general purpose object-oriented programming language. Developed in 1998-2001 by a group of Microsoft 
+engineers under the leadership of Anders Hejlsberg and Scott Wilthaumot as an application development language 
+for the Microsoft .NET Framework and .NET Core platform. Subsequently standardized as ECMA-334 and ISO/IEC 23270. 
+C# belongs to a family of languages with a C-like syntax, of which its syntax is most similar to C++ and Java. 
+
+Had experience in 2nd semester of 1st grade of university.
+Had to do about 10 tasks to implement some functionality to classes, interfaces and collections. 

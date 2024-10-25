@@ -1,0 +1,10 @@
+C is a compiled, statically typed, general-purpose programming language developed in 1969-1973 by Bell Labs 
+employee Dennis Ritchie as a development language for B. The design was developed to implement an embedded 
+UNIX system, but was subsequently ported to many other platforms. By design, the language's constructs closely 
+map to typical machine instructions, resulting in its use in projects that were native to assembly language, 
+including both operating systems and various application software for a variety of devices, from supercomputers 
+to embedded devices systems.
+
+Had experience in first grade of university.
+Had 9 Works for year to be done:
+from simple roman numeral converter to file manager system.

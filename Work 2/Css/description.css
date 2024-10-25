@@ -1,0 +1,56 @@
+div.logo-item {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 1vw;
+}
+button.current-page {
+    background-color: orange;
+    color: black;
+    box-shadow: inset 0 0 0 0.25 black;
+}
+img.language-logo {
+    position: relative;
+    width: 6vw;
+    margin: 1vw 1vw 0.25vw 1vw;
+}
+img.left-language-logo {
+    float: left;
+}
+img.right-language-logo {
+    float: right;
+    margin-top: 0;
+}
+p.description, p.experience {
+    text-indent: 3vw;
+    font-size: 1.5vw;
+    text-align: justify;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+p.small-description {
+    font-size: 1vw;
+}
+div.item-5 {
+    align-content: center;
+}
+
+p.experience:has(.codewars) {
+    text-align: center;
+    text-indent: 0;
+}
+button.codewars {
+    background-color: black;
+    color: white;
+    font: 1000 2vw "Times New Roman";
+    border: none;
+    border-radius: 2vw;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    box-shadow: inset 0 0 0 0.25vw black;
+    margin-top: 0.5vw; 
+}
+button.codewars:hover {
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+}
+

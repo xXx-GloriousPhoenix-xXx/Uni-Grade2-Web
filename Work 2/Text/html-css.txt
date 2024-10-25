@@ -1,0 +1,8 @@
+HTML is a standardized hypertext markup language for viewing web pages in a browser. Web browsers receive an 
+HTML document from the server via HTTP/HTTPS protocols or open it from a local disk, then interpret the code 
+into an interface that will be displayed on the monitor screen. 
+
+CSS is a formal language for decoding and describing the appearance of a document written using a markup language. 
+Can also be applied to any XML documents, such as SVG or XUL. 
+
+Had experience in high school to write simple pages and 2nd grade of university for more professional page coding. 
