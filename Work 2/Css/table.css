@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+}
+div.container {
+    width: 100dvw;
+    min-height: 100dvh;
+}
+table.container td.container-td {
+    border: 0.25vw solid black;
+    padding: 0;
+}
+table {
+    width: 100%;
+    height: 100%;
+}
+table.container {
+    height: 100dvh;
+}
+div.item {
+    padding: 0;
+    margin: 0;
+}
+tr.container-top, tr.container-bot {
+    height: 25dvh;
+}
+/*-------------------------------------------------------------*/
+td.item-1, td.item-6 {
+    width: 75%;
+    height: 25%;
+}
+td.item-2 {
+    width: 25%;
+    height: 50%;
+}
+td.item-3 {
+    width: 75%;
+    height: calc(50% / 6);
+    min-height: calc(50% / 6);;
+}
+td.item-4 {
+    width: 50%;
+}
+td.item-5 {
+    width: 25%;
+}
+td.item-x, td.item-y {
+    width: 25%;
+    height: 100%;
+}
+td.item-y div.hub-style {
+    font-size: 1.5vw;
+}
+table.table-header, table.table-footer {
+    height: 100%;
+}
+/*-------------------------------------------------------------*/
+body {
+    background-color: #111111;
+}
+td.container-td {
+    border-radius: 1.5vw;
+    background-color: #222222;
+}
+td.item-x, td.item-y {
+    font-size: 2.5vw;
+    text-align: center;
+}
+/*-------------------------------------------------------------*/
+table.page-list tr td {
+    text-align: center;
+}
+div.page-option {
+    background-color: black;
+    color: white;
+    border-radius: 2vw;
+    padding: 3.5% 0;
+}
+div.page-option:hover, div.curr-option {
+    color: black;
+    background-color: orange;
+
+    /* -webkit-box-shadow: inset 0 0 0 0.25vw black;
+    -moz-box-shadow: inset 0 0 0 0.25vw black; */
+    box-shadow: inset 0 0 0 0.25vw black;
+}
+div.page-marking {
+    padding: 0;
+}
+div.page-marking:hover {
+    background-color: black;
+    color: white;
+}
+div.list-top, div.list-bot {
+    margin: 0 0.5vw;
+}
+table.marking-list tr td {
+    width: calc(100% / 3);
+}
+div.marking {
+    padding: 10% 0;
+    border-radius: 2vw;
+}
+div.center-marking {
+    border-radius: 0;
+}
+div.left-marking {
+    border-radius: 2vw 0 0 2vw; 
+}
+div.right-marking {
+    border-radius: 0 2vw 2vw 0; 
+}
+div.marking:hover, div.current-marking {
+    background-color: orange;
+    color: black;
+
+}
+/*-------------------------------------------------------------*/
+a {
+    text-decoration: none;
+    color: white;
+}
+table {
+    font-weight: 1000;
+    color: white;
+}
+div.hub-style {
+    display: inline;
+    padding: 1.5vw;
+    background-color: black;
+    border-radius: 1.5vw;
+}
+span.hub-white {
+    color: white;
+}
+span.hub-orange {
+    padding: 0.4vw;
+    background-color: orange;
+    border-radius: 1vw;
+    color: black;
+}
+/*-------------------------------------------------------------*/
+table.logo {
+    width: 100%;
+    height: 100%;
+}
+table.logo td {
+    text-align: center;
+}
+img.logo {
+    width: 6vw;
+    height: 6vw;
+    object-fit: contain;
+}
+/*-------------------------------------------------------------*/
+span.main-text {
+    color: white;
+    font-weight: 1000;
+    font-size: 2vw;
+}
+div.item-1, div.item-6, div.item-3 {
+    text-align: center; 
+}
+/*-------------------------------------------------------------*/
+

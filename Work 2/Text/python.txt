@@ -1,0 +1,9 @@
+Python is a multi-paradigm, high-level, general-purpose programming language with dynamic strong typing and 
+automatic memory management, aimed at increasing developer productivity, code readability and quality, and 
+ensuring the portability of programs written in it. The language is completely object-oriented in the sense 
+that everything is an object. An unusual feature of the language is that blocks of code are indented. The 
+syntax of the language core is minimalist, due to which in practice there is rarely a need to refer to documentation. 
+
+Had experience in middle and high school.
+Worked with simple algorithms such as binary search and merge sort.
+Also made a simple application called "Tag". 

@@ -1,0 +1,16 @@
+div.logo-item{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+div.logo-item div.logo-row {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+img.logo {
+    width: 6vw;
+    height: auto;
+}
