@@ -16,8 +16,6 @@ div.item-y {
 td.item-1, td.item-6 {
     width: 60%;
 }
-
-
 body {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
@@ -43,4 +41,7 @@ a.github-link {
 }
 div.item-x {
     width: 100%;
+}
+div.marking {
+    color: white;
 }
