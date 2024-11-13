@@ -1,0 +1,18 @@
+td.item-special {
+    width: 40%;
+}
+td.item-x {
+    text-align: left;
+}
+div.item-x {
+    padding-left: 15%;
+}
+td.item-y {
+    text-align: right;
+}
+div.item-y {
+    padding-right: 5%;
+}
+td.item-1, td.item-6 {
+    width: 60%;
+}
