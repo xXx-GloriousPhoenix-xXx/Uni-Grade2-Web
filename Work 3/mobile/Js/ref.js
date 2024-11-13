@@ -1,5 +1,5 @@
 function onPythonClick() {
-    window.location.href = "https://xxx-gloriousphoenix-xxx.github.io/Work%202/python.html";
+    window.location.href = "https://Uni-Grade2-Web/Work%202/python.html";
 }
 function onCClick() {
     window.location.href = "https://xxx-gloriousphoenix-xxx.github.io/Work%202/c.html";
