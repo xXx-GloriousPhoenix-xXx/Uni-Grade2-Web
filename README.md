@@ -4,3 +4,14 @@
   <li><a href="https://xxx-gloriousphoenix-xxx.github.io/Work%202/">Work 2</a> - Variativity of main page - different marking: table, flex, grid</li>
   <li><a href="https://xxx-gloriousphoenix-xxx.github.io/Work%203/">Work 3</a> - Mobile adopted and Mail embed</li>
 </ul>
+
+<style>
+  a {
+    color: #FF5733;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #33FF57;
+  }
+</style>
