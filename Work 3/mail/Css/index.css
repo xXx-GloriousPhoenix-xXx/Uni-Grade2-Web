@@ -20,3 +20,7 @@ td.item-1, td.item-6 {
 div.item-x, a {
     width: 40% !important;
 }
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
