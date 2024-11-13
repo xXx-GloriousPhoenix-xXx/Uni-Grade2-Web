@@ -1,17 +1,17 @@
 function onPythonClick() {
-    window.location.href = "https://Uni-Grade2-Web/Work%202/python.html";
+    window.location.href = "https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Uni-Grade2-Web/Work%202/python.html";
 }
 function onCClick() {
-    window.location.href = "https://xxx-gloriousphoenix-xxx.github.io/Work%202/c.html";
+    window.location.href = "https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work%202/c.html";
 }
 function onCppClick() {
-    window.location.href = "https://xxx-gloriousphoenix-xxx.github.io/Work%202/cpp.html";
+    window.location.href = "https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work%202/cpp.html";
 }
 function onCsClick() {
-    window.location.href = "https://xxx-gloriousphoenix-xxx.github.io/Work%202/cs.html";
+    window.location.href = "https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work%202/cs.html";
 }
 function onHtmlClick() {
-    window.location.href = "https://xxx-gloriousphoenix-xxx.github.io/Work%202/html.html";
+    window.location.href = "https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work%202/html.html";
 }
 document.getElementsByClassName("goto-python")[0].addEventListener("click", onPythonClick);
 document.getElementsByClassName("goto-c")[0].addEventListener("click", onCClick);
@@ -20,13 +20,13 @@ document.getElementsByClassName("goto-cs")[0].addEventListener("click", onCsClic
 document.getElementsByClassName("goto-html")[0].addEventListener("click", onHtmlClick);
 
 function onTableMarkingClick() {
-    window.location.href = "https://xxx-gloriousphoenix-xxx.github.io/Work%202/general-table.html";
+    window.location.href = "https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work%202/general-table.html";
 }
 function onGridMarkingClick() {
-    window.location.href = "https://xxx-gloriousphoenix-xxx.github.io/Work%202/general-grid.html";
+    window.location.href = "https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work%202/general-grid.html";
 }
 function onFlexMarkingClick() {
-    window.location.href = "https://xxx-gloriousphoenix-xxx.github.io/Work%202/general-flex.html";
+    window.location.href = "https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work%202/general-flex.html";
 }
 document.getElementsByClassName("goto-table-marking")[0].addEventListener("click", onTableMarkingClick);
 document.getElementsByClassName("goto-grid-marking")[0].addEventListener("click", onGridMarkingClick);
