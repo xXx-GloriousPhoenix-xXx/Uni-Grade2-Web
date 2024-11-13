@@ -17,10 +17,30 @@ td.item-1, td.item-6 {
     width: 60%;
 }
 
-div.item-x, a {
-    width: 40% !important;
-}
 
 body {
     font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+div.hub-style {
+    display: inline;
+    padding: 20px;
+    background-color: black;
+    border-radius: 15px;
+}
+span.hub-white {
+    color: white;
+}
+span.hub-orange {
+    padding: 5px;
+    background-color: orange;
+    border-radius: 10px;
+    color: black;
+}
+a.github-link {
+    width: 60% !important;
+}
+div.item-x {
+    width: 100%;
 }
