@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    /* height: 100dvh; */
+    height: 100%;
 }
 div.container {
     display: flex;
@@ -57,7 +57,7 @@ div.dedication-wrapper {
     justify-content: center;
     align-items: center;
 
-    margin-top: 0.75vw;
+    margin-top: 1vw;
     width: calc(100% - 0.75vw);
     margin-left: 0.25vw;
     margin-right: 0.5vw;
@@ -94,19 +94,22 @@ div.environment-wrapper {
     margin-left: calc(0.25vw + 0.125vw);
     margin-right: 0.5vw;
 
-    height: 20dvh;
-    margin-top: 0.3125vw;
+    height: 30dvh;
+    margin-top: 1vw;
 }
 
 div.item-x, div.item-y {
     display: flex;
-    width: calc(25% - 0.5vw);
+    width: calc(40% - 0.5vw);
     height: calc(100% - 1vw);
 }
 div.item-1, div.item-6 {
     display: flex;
-    width: calc(75% - 0.5vw);
+    width: calc(60% - 0.5vw);
     height: calc(100% - 1vw);
+
+    text-align: center;
+    flex-direction: column;
 }
 div.item-2, div.item-3, div.item-4, div.item-5 {
     display: flex;
@@ -115,13 +118,13 @@ div.item-2, div.item-3, div.item-4, div.item-5 {
 }
 /*-------------------------------------------------------------*/
 div.round-item {
-    border-radius: 2vw;
+    border-radius: 5vw;
 }
 div.left-semi-round-item {
-    border-radius: 2vw 0 0 2vw;
+    border-radius: 5vw 0 0 5vw;
 }
 div.right-semi-round-item {
-    border-radius: 0 2vw 2vw 0;
+    border-radius: 0 5vw 5vw 0;
 }
 div.semi-round-item {
     height: 10dvh;
@@ -172,7 +175,7 @@ div.item-named {
     justify-content: center;
 }
 div.hub-style {
-    font-size: 3vw;
+    font-size: 8vw;
     padding: 1vw 2vw;
     background-color: black;
     border-radius: 2vw;
@@ -190,12 +193,12 @@ a {
     text-decoration: none;
 }
 div.item-named {
-    font-size: 2vw;
+    font-size: 4vw;
     font-weight: 1000;
     color: white;
 }
 div.author {
-    font-size: 1.75vw;
+    font-size: 3vw;
     padding: 1vw;
 }
 /*-------------------------------------------------------------*/
@@ -208,11 +211,11 @@ div.option-div {
     width: 100%;
     height: calc((100% - 10%) / 6);
     background-color: black;
-    border-radius: 2vw;
-    margin: 0 0.25vw;
+    border-radius: 6vw;
+    margin: 0 1vw;
 }
 div.edge-option-div {
-    margin: 0 0.5vw;
+    margin: 0 1vw;
 }
 div.top-option-div {
     margin-top: 0.5%;
@@ -222,8 +225,8 @@ div.bottom-option-div {
 }
 /*-------------------------------------------------------------*/
 button.page-option {
-    box-shadow: inset 0 0 0 0.25vw black;
-    border-radius: 2vw;
+    box-shadow: inset 0 0 0 0.5vw black;
+    border-radius: 6vw;
 }
 button.option {
     width: 100%;
@@ -231,9 +234,14 @@ button.option {
     background-color: black;
     border: none;
     color: white;
-    font: 1000 1.5vw "Times New Roman", serif;
+    font: 1000 4vw "Times New Roman", serif;
 }
 button.option:hover, button.current-marking {
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+}
+button:active {
     background-color: orange;
     color: black;
     cursor: pointer;
@@ -247,12 +255,18 @@ div.marking-option {
     width: calc(100% / 3);
 }
 button.marking-option {
-    border: 0.25vw solid black;
+    border: 0.5vw solid black;
 }
 button.left-marking-option {
-    border-radius: 2vw 0 0 2vw;
+    border-radius: 5vw 0 0 5vw;
 }
 button.right-marking-option {
-    border-radius: 0 2vw 2vw 0;
+    border-radius: 0 5vw 5vw 0;
 }
 /*-------------------------------------------------------------*/
+div.item-x div.hub-style {
+    border-radius: 4vw;
+}
+div.item-x div.hub-style span.hub-orange {
+    border-radius: 2vw;
+}

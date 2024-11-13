@@ -11,6 +11,11 @@ div.logo-item div.logo-row {
     align-items: center;
 }
 img.logo {
-    width: 12dvw;
     height: auto;
+}
+img.environment-logo {
+    width: 20dvw;
+}
+img.language-logo {
+    width: 12dvw;
 }
