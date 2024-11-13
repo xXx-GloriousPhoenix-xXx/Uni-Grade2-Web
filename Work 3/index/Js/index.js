@@ -1,5 +1,5 @@
 function OnMailClick() {
-    window.location.href = "mail\\index.html";
+    window.location.href = "mail\\index-inline.html";
 }
 function OnMobileClick() {
     window.location.href = "mobile\\index.html";
