@@ -16,3 +16,7 @@ div.item-y {
 td.item-1, td.item-6 {
     width: 60%;
 }
+
+div.item-x, a {
+    width: 40% !important;
+}
