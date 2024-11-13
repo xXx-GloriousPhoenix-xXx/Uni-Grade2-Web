@@ -270,3 +270,24 @@ div.item-x div.hub-style {
 div.item-x div.hub-style span.hub-orange {
     border-radius: 2vw;
 }
+/*-------------------------------------------------------------*/
+@media (width >= 768px) {
+    div.item-top, div.item-bot, div.dedication-wrapper {
+        height: 20dvh;
+    }
+    div.semi-round-item {
+        height: 95%;
+    }
+    div.nav-wrapper {
+        height: 50dvh;
+    }
+    div.main-content {
+        height: 101dvh;
+    }
+    div.language-wrapper {
+        height: 40dvh;
+    }
+    div.environment-wrapper {
+        height: 60dvh;
+    }
+}
