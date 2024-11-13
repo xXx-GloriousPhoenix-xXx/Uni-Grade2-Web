@@ -1,0 +1,8 @@
+a {
+    color: #FF5733;  /* Change the link color */
+    text-decoration: none;  /* Remove underline */
+}
+  
+a:hover {
+    color: #33FF57;  /* Optional: Change color on hover */
+}
