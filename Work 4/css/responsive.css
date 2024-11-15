@@ -28,6 +28,7 @@
     div.content-wrapper {
         flex-flow: row nowrap;
         height: 70%;
+        gap: 1vw;
     }
     article {
         width: calc((1 / 6) * 100dvw);

@@ -18,6 +18,9 @@ div.content {
 }
 div.content-wrapper {
     display: inline-flex;
+    /* background-color: white; */
+}
+article {
     background-color: white;
 }
 

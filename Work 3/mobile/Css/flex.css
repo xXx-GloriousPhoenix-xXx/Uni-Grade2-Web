@@ -25,14 +25,18 @@ div.item-mid {
     justify-content: center;
     align-items: center;
 }
-/* div.mid-wrapper {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-} */
+
+@media (width <= 768) {
+    div.mid-wrapper {
+            display: flex;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 div.nav-wrapper {
     display: flex;
     /* width: 100%; */
