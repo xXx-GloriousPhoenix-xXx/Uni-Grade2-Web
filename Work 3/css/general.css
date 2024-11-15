@@ -1,0 +1,61 @@
+/*---------------General---------------*/
+body {
+    margin: 0;
+    height: 100dvh;
+    background-color: #111;
+    display: grid;
+
+    gap: 0.5%;
+    justify-content: space-around;
+    align-content: space-evenly;
+}
+body > *:not(script) {
+    display: flex;
+    background-color: #222;
+}
+header.header-1 {
+    grid-area: header-1;
+}
+nav {
+    grid-area: navbar;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    padding: 0 2%;
+}
+nav > button, main.page-marking {
+    height: 15%;
+}
+main {
+    display: flex;
+}
+main > button {
+    width: calc(100% / 3);
+    height: 100%;
+}
+button {
+    border: none;
+    background-color: black;
+}
+button:hover, button:active {
+    background-color: orange;
+    color: black;
+}
+header.header-2 {
+    grid-area: header-2;
+}
+section.section-1 {
+    grid-area: lsection;
+}
+section.section-2 {
+    grid-area: rsection;
+}
+footer {
+    grid-area: footer;
+}
+* {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+::-webkit-scrollbar {
+    scrollbar-width: none;
+}
