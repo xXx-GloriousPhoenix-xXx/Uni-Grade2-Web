@@ -16,6 +16,10 @@ body > *:not(script) {
 header.header-1 {
     grid-area: header-1;
 }
+header {
+    align-items: center;
+    justify-content: center;
+}
 nav {
     grid-area: navbar;
     flex-flow: column wrap;
@@ -35,8 +39,9 @@ main > button {
 button {
     border: none;
     background-color: black;
+    cursor: pointer;
 }
-button:hover, button:active {
+nav button:hover, nav button:active {
     background-color: orange;
     color: black;
 }
@@ -51,6 +56,35 @@ section.section-2 {
 }
 footer {
     grid-area: footer;
+    align-items: center;
+    justify-content: center;
+}
+   
+header > div, footer > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+div.item-text {
+    width: 70%;
+    margin: 4vw;
+    text-align: center;
+}
+div.item-special {
+    width: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+div.item-x {
+    align-items: flex-start;
+}
+div.item-y {
+    align-items: flex-end;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
 }
 * {
     font-family: 'Times New Roman', Times, serif;

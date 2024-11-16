@@ -19,6 +19,9 @@
         font-weight: 600;
         font-size: min(1.5vw, 3vh);
     }
+    div.item-text > span {
+        font-size: min(2.5vw, 5vh);
+    }
     /**/
     section {
         flex-flow: column wrap;
@@ -40,5 +43,46 @@
     section.section-2 > div > img {
         width: min(20%, calc(250dvh/18));
         height: auto;
+    }
+
+    div.item-x {
+        padding-left: 3.5vw;
+    }
+    button#github {
+        width: 30%;
+        height: 40%;
+        border-radius: 1vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    button#github > span {
+        width: 35%;
+    }
+    button#github > span:last-child {
+        background-color: orange;
+        padding: 0.5vw;
+        border-radius: 0.5vw;
+        color: black;
+    }
+
+    div.author {
+        width: 65%;
+        height: 40%;
+        border-radius: 1vw;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+        background-color: black;
+        box-sizing: border-box;
+    }
+    div.author > span:first-child {
+        background-color: orange;
+        padding: 0.5vw;
+        border-radius: 0.5vw;
+        color: black;
     }
 }
