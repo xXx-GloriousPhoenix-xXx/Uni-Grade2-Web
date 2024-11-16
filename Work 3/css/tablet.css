@@ -1,7 +1,10 @@
 /*---------------Tablet---------------*/
 @media (449px <= width <= 1024px) {
+    body {
+        grid-template-rows: 14dvh 49dvh 14dvh 129dvh 69dvh 14dvh;
+    }
     body > * {
-        border-radius: 6vw;
+        border-radius: 4vw;
     }
     main > button:first-child {
         border-radius: 6vw 0 0 6vw;
@@ -9,8 +12,11 @@
     main > button:last-child {
         border-radius: 0 6vw 6vw 0;
     }
+    nav {
+        border-radius: 4vw;
+    }
     nav > button {
-        border-radius: 6vw;
+        border-radius: 4vw;
     }
     button {
         box-shadow: inset 0 0 0 0.5vw black;
@@ -18,5 +24,9 @@
     * {
         font-weight: 400;
         font-size: 4vw;
+    }
+    section > div > img {
+        width: 20%;
+        height: auto;
     }
 }

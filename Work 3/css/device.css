@@ -1,0 +1,32 @@
+/*---------------PC---------------*/
+@media (width >= 1025px) {
+    body {
+        grid-template-columns: 24.75% 49.5% 24.75%;
+        grid-template-rows: 24% calc(50% / 6 - 1%) calc(250% / 6 - 1%) 24%;
+        grid-template-areas: 
+            "header-1 header-1  header-1"
+            "navbar   header-2  header-2"
+            "navbar   lsection  rsection"
+            "footer   footer    footer  ";
+    }
+}
+
+/*---------------Tablet & Phone---------------*/
+@media (width <= 1024px) {
+    body {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "header-1"
+            "navbar  "
+            "header-2"
+            "lsection"
+            "rsection"
+            "footer  ";
+    }
+    section {
+        flex-flow: row wrap;
+    }
+    section > div {
+        width: 100%;
+    }
+}

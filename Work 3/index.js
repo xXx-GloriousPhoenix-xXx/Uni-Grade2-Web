@@ -11,8 +11,8 @@ const name = {
     html: "html.html"
 };
 
-for (const id in pageLinks) {
-    if (pageLinks.hasOwnProperty(id)) {
+for (const id in name) {
+    if (name.hasOwnProperty(id)) {
         document.getElementById(id).addEventListener("click", () => {
             document.location.href = directory + name[id];
         });

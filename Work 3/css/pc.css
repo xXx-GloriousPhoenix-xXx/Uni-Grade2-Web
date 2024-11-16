@@ -1,16 +1,7 @@
 /*---------------PC---------------*/
 @media (width >= 1025px) { /*>=1366px*/
-    body {
-        grid-template-columns: 24.75% 49.5% 24.75%;
-        grid-template-rows: 24% calc(50% / 6 - 1%) calc(250% / 6 - 1%) 24%;
-        grid-template-areas: 
-            "header-1 header-1  header-1"
-            "navbar   header-2  header-2"
-            "navbar   lsection  rsection"
-            "footer   footer    footer  ";
-    }
     body > * {
-        border-radius: 2vw;
+        border-radius: min(2vw, 5vh);
     }
     main > button:first-child {
         border-radius: 2vw 0 0 2vw;
@@ -26,6 +17,28 @@
     }
     * {
         font-weight: 600;
-        font-size: 1.5vw;
+        font-size: min(1.5vw, 3vh);
+    }
+    /**/
+    section {
+        flex-flow: column wrap;
+    }
+    section > div {
+        flex-flow: row nowrap;
+        height: 50%;
+    }
+    section.section-1 > div {
+        width: 50%;
+    }
+    section.section-2 > div {
+        width: 100%;
+    }
+    section.section-1 > div > img {
+        width: min(20%, calc(250dvh/18));
+        height: auto;
+    }
+    section.section-2 > div > img {
+        width: min(20%, calc(250dvh/18));
+        height: auto;
     }
 }

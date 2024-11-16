@@ -1,5 +1,8 @@
 /*---------------Phone---------------*/
 @media (width <= 448px) {
+    body {
+        grid-template-rows: 14dvh 49dvh 14dvh 99dvh 49dvh 14dvh;
+    }
     body > * {
         border-radius: 6vw;
     }
@@ -18,5 +21,9 @@
     * {
         font-weight: 400;
         font-size: 6vw;
+    }
+    section > div > img {
+        width: 30%;
+        height: auto;
     }
 }
