@@ -38,7 +38,7 @@
     }
     button#github {
         width: 80%;
-        height: 8dvh;
+        height: 7dvw;
         border-radius: 3vw;
         display: flex;
         flex-flow: row nowrap;
@@ -50,7 +50,7 @@
     }
     button#github > span:last-child {
         background-color: orange;
-        padding: 0.75vw;
+        padding: 0.1vw;
         border-radius: 1vw;
         color: black;
     }

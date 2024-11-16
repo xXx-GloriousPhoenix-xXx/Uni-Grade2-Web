@@ -80,7 +80,6 @@ div.item-x {
     align-items: flex-start;
 }
 div.item-y {
-    align-items: flex-end;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
