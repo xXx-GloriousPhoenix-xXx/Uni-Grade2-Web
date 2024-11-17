@@ -15,7 +15,8 @@ function getRandomInt(min, max) {
 }
 
 function rotate() {
-    systemRotationAngle += (1 / 32); 
+    angle = 1 / 32;
+    systemRotationAngle += angle; 
     container.style.transform = `rotate(${systemRotationAngle}deg)`;
 
     buttons.forEach(({ element, radius }) => {
