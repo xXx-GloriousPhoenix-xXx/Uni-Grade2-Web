@@ -7,8 +7,7 @@ html, body {
     width: 100dvw;
     height: 100dvh;
 
-    /* background-image: url('Main/data/background.png'); */
-    background-image: url('../Main/data/planet_background.png');
+    background-image: url('https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Main/data/planet_background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +22,7 @@ html, body {
     border-radius: 50%;
 }
 
-.circle-container button {
+.circle-container > button {
     position: absolute;
     border-radius: 50%;
     background-color: transparent;
@@ -35,4 +34,22 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    animation: rotateButton linear infinite;
+}
+
+.circle-container button span {
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+@keyframes rotateButton {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
