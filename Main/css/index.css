@@ -1,0 +1,38 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100dvw;
+    height: 100dvh;
+
+    /* background-image: url('Main/data/background.png'); */
+    background-image: url('../Main/data/planet_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+.circle-container {
+    position: relative;
+    width: 80dvh;
+    height: 80dvh;
+    border-radius: 50%;
+}
+
+.circle-container button {
+    position: absolute;
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
