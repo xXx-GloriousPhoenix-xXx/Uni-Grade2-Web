@@ -22,8 +22,6 @@ function positionButtons() {
             }
         }
     }
-    console.log(divider);
-    console.log(container.offsetWidth);
 
     const radius = Math.min(container.offsetHeight, container.offsetWidth) / divider;
 
@@ -98,7 +96,7 @@ function rotate() {
 }
 async function start() {
     const worksDone = await countWorks();
-    console.log(worksDone);
+    // console.log(worksDone);
 
     const buttonCount = worksDone;
     const radius = Math.min(container.offsetHeight, container.offsetWidth) / 2;
@@ -114,7 +112,11 @@ async function start() {
 
         button.style.backgroundImage = `url('Main/data/planet_${i + 1}.png')`;
         button.addEventListener("click", () => {
-            document.location.href = `https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work%20${i + 1}`;
+            let postfix = '';
+            if (i + 1 === 3) {
+                postfix = '/main/';
+            }
+            document.location.href = `https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work%20${i + 1}${postfix}`;
         });
 
         button.textContent = i + 1;
