@@ -51,13 +51,11 @@ async function start() {
         button.style.backgroundImage = `url('Main/data/planet_${i + 1}.png')`;
         button.addEventListener("click", () => document.location.href = `https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work%20${i + 1}`);
     
-        const span = document.createElement("span");
-        span.textContent = i + 1;
+        button.textContent = i + 1;
     
         const buttonRotation = getRandomInt(0, 360); 
     
         buttons.push({ element: button, radius: radius, buttonRotation: buttonRotation });
-        button.appendChild(span);
         container.appendChild(button);
     }
 

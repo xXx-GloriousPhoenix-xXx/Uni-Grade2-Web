@@ -22,11 +22,11 @@ html, body {
     border-radius: 50%;
 }
 
-.circle-container > button {
+.circle-container button {
     position: absolute;
     border-radius: 50%;
     background-color: transparent;
-    color: white;
+
     border: none;
     cursor: pointer;
     transform: translate(-50%, -50%);
@@ -36,13 +36,11 @@ html, body {
     background-repeat: no-repeat;
 
     animation: rotateButton linear infinite;
-}
 
-.circle-container button span {
-    position: relative;
     font-family: 'Times New Roman', Times, serif;
     font-size: 2vw;
     font-weight: 500;
+    color: white;
 }
 
 @keyframes rotateButton {
