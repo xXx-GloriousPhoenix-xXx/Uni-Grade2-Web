@@ -1,0 +1,35 @@
+html, body {
+    margin: 0;
+    height: 100dvh;
+}
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+body > * {
+    display: flex;
+    width: 100dvw;
+}
+body > *:first-child, body > *:last-child {
+    box-shadow: inset 0 0 0 0.05vw #1a1a1a;
+}
+header {
+    height: 10dvh;
+    background-color: white;
+}
+main {
+    width: 70dvw;
+    height: 45dvh;
+    margin: 15dvh 15dvw;
+}
+footer {
+    height: 15dvh;
+    background-color: #1a1a1a;
+}
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*PC*/
