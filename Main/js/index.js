@@ -14,29 +14,18 @@ function getRandomInt(min, max) {
     return Math.random() * (intMax - intMin) + intMin;
 }
 
-function rotate() {
-    angle = 1 / 32;
-    systemRotationAngle += angle; 
-    container.style.transform = `rotate(${systemRotationAngle}deg)`;
-
-    buttons.forEach(({ element, radius }) => {
-        const textAngle = -systemRotationAngle;
-        element.style.transform = `translate(-50%, -50%) rotate(${textAngle}deg)`;
-    });
-
-    requestAnimationFrame(rotate);
-}
+const buttons = [];
+let systemRotationAngle = 0;
+const container = document.getElementById("circleContainer");
 
 async function start() {
+
     const worksDone = await countWorks();
     console.log(worksDone);
     
-    const container = document.getElementById("circleContainer");
     const buttonCount = worksDone;
     const radius = 240;
-    let systemRotationAngle = 0;
     
-    const buttons = [];
     for (let i = 0; i < buttonCount; i++) {
         const angle = (i / buttonCount) * (2 * Math.PI);
         const x = radius * Math.cos(angle) + container.offsetWidth / 2;
@@ -63,6 +52,18 @@ async function start() {
     }
 
     rotate();
+}
+
+function rotate() {
+    systemRotationAngle += 1 / 32; 
+    container.style.transform = `rotate(${systemRotationAngle}deg)`;
+
+    buttons.forEach(({ element, radius }) => {
+        const textAngle = -systemRotationAngle;
+        element.style.transform = `translate(-50%, -50%) rotate(${textAngle}deg)`;
+    });
+
+    requestAnimationFrame(rotate);
 }
 
 start();
