@@ -15,14 +15,14 @@ html, body {
     overflow: hidden;
 }
 
-.circle-container {
+div.container {
     position: relative;
     width: 80dvh;
     height: 80dvh;
     border-radius: 50%;
 }
 
-.circle-container button {
+div.container button {
     position: absolute;
     border-radius: 50%;
     background-color: transparent;
@@ -35,19 +35,8 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
 
-    animation: rotateButton linear infinite;
-
     font-family: 'Times New Roman', Times, serif;
     font-size: 2vw;
     font-weight: 500;
-    color: white;
-}
-
-@keyframes rotateButton {
-    0% {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
+    color: black;
 }
