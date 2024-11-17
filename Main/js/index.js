@@ -7,11 +7,21 @@ async function countWorks() {
     const workFolders = data.filter(item => item.type === 'dir' && item.name.startsWith('Work'));
     return workFolders.length;
 }  
-  
 function getRandomInt(min, max) {
     const intMin = Math.floor(min);
     const intMax = Math.ceil(max);
     return Math.random() * (intMax - intMin) + intMin;
+}
+function rotate() {
+    systemRotationAngle += 1 / 32; 
+    container.style.transform = `rotate(${systemRotationAngle}deg)`;
+
+    buttons.forEach(({ element, radius }) => {
+        const textAngle = -systemRotationAngle;
+        element.style.transform = `translate(-50%, -50%) rotate(${textAngle}deg)`;
+    });
+
+    requestAnimationFrame(rotate);
 }
 
 const buttons = [];
@@ -52,18 +62,6 @@ async function start() {
     }
 
     rotate();
-}
-
-function rotate() {
-    systemRotationAngle += 1 / 32; 
-    container.style.transform = `rotate(${systemRotationAngle}deg)`;
-
-    buttons.forEach(({ element, radius }) => {
-        const textAngle = -systemRotationAngle;
-        element.style.transform = `translate(-50%, -50%) rotate(${textAngle}deg)`;
-    });
-
-    requestAnimationFrame(rotate);
 }
 
 start();
