@@ -1,5 +1,8 @@
 /*---------------PC---------------*/
 @media (width >= 1025px) { /*>=1366px*/
+    body {
+        height: 100dvh;
+    }
     body > * {
         border-radius: min(2vw, 5vh);
     }

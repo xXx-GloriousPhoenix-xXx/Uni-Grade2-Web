@@ -1,8 +1,8 @@
 /*---------------PC---------------*/
 @media (width >= 1025px) {
     body {
-        grid-template-columns: 24.75% 49.5% 24.75%;
-        grid-template-rows: 24% calc(50% / 6 - 1%) calc(250% / 6 - 1%) 24%;
+        grid-template-columns: 24.75dvw 49.5dvw 24.75dvw;
+        grid-template-rows: 24dvh calc(50dvh / 6 - 1dvh) calc(250dvh / 6 - 1dvh) 24dvh;
         grid-template-areas: 
             "header-1 header-1  header-1"
             "navbar   header-2  header-2"
@@ -14,7 +14,7 @@
 /*---------------Tablet & Phone---------------*/
 @media (width <= 1024px) {
     body {
-        grid-template-columns: 100%;
+        grid-template-columns: 100dvw;
         grid-template-areas:
             "header-1"
             "navbar  "

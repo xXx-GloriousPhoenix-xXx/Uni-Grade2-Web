@@ -2,6 +2,7 @@
 @media (width <= 448px) {
     body {
         grid-template-rows: 14dvh 49dvh 14dvh 99dvh 49dvh 14dvh;
+        height: 245dvh;
     }
     body > * {
         border-radius: 6vw;

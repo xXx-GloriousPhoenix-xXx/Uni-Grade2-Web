@@ -1,6 +1,7 @@
 /*---------------Tablet---------------*/
 @media (449px <= width <= 1024px) {
     body {
+        height: 225dvh;
         grid-template-rows: 14dvh 49dvh 14dvh 79dvh 49dvh 14dvh;
     }
     body > * {
