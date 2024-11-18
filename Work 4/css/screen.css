@@ -1,0 +1,53 @@
+/*---------------PC---------------*/
+@media (min-width: 448px) {
+    body {
+        /* height: 100dvh; */
+    }
+    #page-menu {
+        display: none;
+    }
+    nav.options {
+        display: flex;
+    }
+    div.main main {
+        flex-flow: row nowrap;
+    }
+    section.service {
+        width: 30%;
+    }
+    body > header > * {
+        width: 50%;
+    }
+}
+
+/*---------------Non-PC---------------*/
+@media (max-width: 448px) {
+    /* body {
+        height: 200dvh;
+    }
+    body main {
+        height: 75dvh;
+    } */
+    #page-menu {
+        display: block;
+    }
+    nav.options {
+        display: none;
+    }
+    div.logo, div.page-menu {
+        width: 50%;
+    }
+    div.main main {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    section.service {
+        width: 90%;
+    }
+    form.search {
+        width: 75%;
+    }
+    div.profile-menu {
+        width: 25%;
+    }
+}

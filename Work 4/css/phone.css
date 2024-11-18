@@ -1,0 +1,5 @@
+@media (max-width: 448px) {
+    * {
+        font-size: min(3dvw, 3dvh);
+    }
+}

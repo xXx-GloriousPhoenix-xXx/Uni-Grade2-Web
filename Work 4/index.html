@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="css/pc.css">
+    <link rel="stylesheet" href="css/laptop.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/phone.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sacramento&display=swap" rel="stylesheet">
-
-    <title>Document</title>
+    
+    <title>Arcane Tarot</title>
+    <link rel="icon" href="data/tarot.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <form>
+        <form class="search">
             <div class="search">
                 <input type="text" placeholder="Searching..." id="search">
             </div>
         </form>
-        <div>
-            <img src="https://xXx-GloriousPhoenix-xXx.github.io/Uni-Grade2-Web/Work%204/data/menu.png" alt="menu.png" id="menu">
+        <div class="profile-menu">
+            <img src="data/general/profile-menu.png" alt="profile-menu" id="profile-menu">
             <div id="tooltip">
                 <button>Profile</button>
                 <button>Settings</button>
@@ -43,20 +50,38 @@
             </header>
             <main>
                 <section class="service">
-                    
+                    <img src="data/content/relationship.png" alt="personal spread">
+                    <h2>Personal spread</h2>
+                    <p>
+                        I offer personalized tarot card readings to help resolve your issues. 
+                        Depending on the situation, 
+                        I use different spreads to help you gain clarity and guidance.
+                    </p>
                 </section>
                 <section class="service">
-        
+                    <img src="data/content/consulting.jpg" alt="consulting">
+                    <h2>Consulting</h2>
+                    <p>
+                        If you are looking for professional help in difficult life situations, 
+                        I offer tarot consultations. We will discuss your problems and 
+                        I will help you find the right path using the ancient wisdom of the Tarot and intuition.
+                    </p>
                 </section>
                 <section class="service">
-        
+                    <img src="data/content/teaching.jpg" alt="teaching">
+                    <h2>Teaching</h2>
+                    <p>
+                        Want to learn Tarot? I offer courses and workshops for beginners and advanced. 
+                        In my classes you will learn the basics of cards, different types of layouts 
+                        and learn how to use Tarot for personal needs or professional practice.
+                    </p>
                 </section>
             </main>
         </div>
     </main>
     <footer>
         <div class="logo">
-            <img src="data/tarot.png" alt="tarot.png" class="logo">
+            <img src="data/general/tarot.png" alt="logo" class="logo">
         </div>
         <nav class="options">
             <button class="option">Home</button>
@@ -70,6 +95,9 @@
             <button class="option">8</button>
             <button class="option">9</button>          
         </nav>
+        <div class="page-menu">
+            <img src="data/general/page-menu.png" alt="page-menu" id="page-menu">
+        </div>
     </footer>
     <script src="js/index.js"></script>
 </body>

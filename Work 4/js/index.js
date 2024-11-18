@@ -12,6 +12,6 @@ function DisplayMenu()
     }
 }
 
-const menu = document.getElementById("menu");
+const menu = document.getElementById("profile-menu");
 menu.addEventListener("click", DisplayMenu);
 const tooltip = document.getElementById("tooltip");

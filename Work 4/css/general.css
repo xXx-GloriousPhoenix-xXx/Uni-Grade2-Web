@@ -1,28 +1,24 @@
 /*---------------General---------------*/
 html, body {
     margin: 0;
-    height: 100dvh;
+    /* height: 200dvh; */
 }
 body {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+    width: 100dvw;
 }
 body > * {
     display: flex;
     width: 100dvw;
 }
 * {
-    color: #1a1a1a;
-    font-size: min(1dvw, 2dvh);
-    font-family: "Cinzel", cursive;
     font-weight: 400;
+    color: #1a1a1a;
+    font-family: "Cinzel", cursive;
 }
-body > header, body > footer {
-    box-shadow: inset 0 0 0 min(0.1dvh, max(0.1dvw, 0.1dvh)) #1a1a1a;
-}
-
 
 /*---------------Header---------------*/
 body > header {
@@ -34,36 +30,36 @@ body > header > * {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50dvw;
 }
 div.search {
-    padding: 1dvh 1dvw;
+    padding: 1em;
     position: relative;
 }
 #search {
-    width: 12dvw;
-    height: 3dvh;
+    width: 10em;
+    height: 1em;
     border: none;
-    padding: 1dvh 2dvw 1dvh 1dvw;
-    box-shadow: inset 0 0 0 min(0.1dvh, max(0.1dvw, 0.1dvh)) #1a1a1a;
-    border-radius: max(2dvw, 5dvh);
+    padding: 1em 3em 1em 1em;
+    box-shadow: inset 0 0 0 0.05em #1a1a1a;
+    border-radius: 2em;
 }
 div.search::after {
     display: inline-block;
-    width: 2dvh;
-    height: 2dvh;
+    width: 1.5em;
+    aspect-ratio: 1;
 
     content: '';
-    background-image: url('https://xXx-GloriousPhoenix-xXx.github.io/Uni-Grade2-Web/Work%204/data/search.png');
+    background-image: url('../data/general/search.png');
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    transform: translateY(75%);
-    right: 1.75dvw;
+    /* transform: translateY(60%); */
+    top: 1.75em;
+    right: 2em;
 }
-#menu {
+#profile-menu {
     width: 1.5em;
-    height: 1.5em;
+    aspect-ratio: 1;
     transition: transform 0.5s ease;
 }
 #tooltip {
@@ -75,8 +71,9 @@ div.search::after {
     width: fit-content;
     height: fit-content;
 
-    margin-top: 20dvh;
-    padding: 1dvh 1dvw;
+    /* margin-top: 30dvh; */
+    transform: translateY(65%);
+    padding: 2dvh 1dvw;
 
     box-shadow: inset 0 0 0 0.1dvw #1a1a1a;
     background-color: white;
@@ -85,32 +82,42 @@ div.search::after {
     border-radius: max(0.5dvw, 2dvh);
 }
 #tooltip > button {
-    height: 3dvh;
-    border-radius: max(2dvw, 5dvh);
+    height: fit-content;
+    border-radius: max(1dvw, 2dvh);
     border: none;
     box-shadow: inset 0 0 0 min(0.1dvh, max(0.1dvw, 0.1dvh)) #1a1a1a;
     background-color: white;
+    font-size: 1.5vw;
 }
 
 /*---------------Main---------------*/
 body > main {
-    height: 75dvh;
+    height: 100dvh;
+    background-image: url('../data/general/background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 div.main {
     width: 100%;
-    margin: 5dvh 15dvw 5dvh 15dvw;
+    /* margin: 5dvh 15dvw; */
+    margin: 0 15dvw;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
+    justify-content: center;
+    /* gap: 5%; */
 }
 div.main > * {
     width: 100%;
 }
 div.main header {
     margin: 0 10% 0 0;
-    height: 25%;
+    height: fit-content;
 }
 div.main header h1 {
-    font-size: min(3dvw, 6dvh);
+    font-size: 2em;
+    font-weight: 500;
+
 }
 div.main header p {
     color: #2a2a2a;
@@ -120,14 +127,34 @@ div.main header > * {
 }
 div.main main {
     display: flex;
-    justify-content: center;
-    height: 75%;
-    flex-flow: column wrap;
+    /* gap: 2.5%; */
 }
 section.service {
-    width: 30%;
-    height: 90%;
-    box-shadow: inset 0 0 0 min(0.1dvh, max(0.1dvw, 0.1dvh)) #1a1a1a;
+    box-shadow: inset 0 0 0 0.05em #1a1a1a;
+    border-radius: 1em;
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 1em 0;
+}
+section.service > img {
+    width: 70%;
+    height: max-content;
+    border-radius: min(1dvw, 2dvh);
+    border: min(0.1dvh, max(0.1dvw, 0.1dvh)) #1a1a1a solid;
+}
+section.service > h2 {
+    font-size: 1em;
+    font-weight: 500;
+    color: #c0854b;
+    margin: 0.5em 0;
+}
+section.service > p {
+    margin: 0 1em;
+}
+p {
+    text-indent: 2vw;
 }
 
 /*---------------Footer---------------*/
@@ -142,19 +169,20 @@ footer * {
     color: white;
 }
 div.logo {
-    width: 40%;
+    width: 25%;
     align-items: center;
     justify-content: center;
 }
 nav.options {
-    width: 60%;
+    width: 50%;
 }
 button.option {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    padding: 2dvw;
+    padding: 1dvw;
     border: none;
+    width: 10%;
     background-color: transparent;
 }
 button.option:hover {
@@ -164,5 +192,15 @@ img.logo {
     width: min(8dvw, 8dvh);
     aspect-ratio: 1;
 }
-
+div.page-menu {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#page-menu {
+    width: 1.5em;
+    aspect-ratio: 1;
+}
 
