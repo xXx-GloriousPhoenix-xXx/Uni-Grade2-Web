@@ -15,5 +15,3 @@ function DisplayMenu()
 const menu = document.getElementById("menu");
 menu.addEventListener("click", DisplayMenu);
 const tooltip = document.getElementById("tooltip");
-
-

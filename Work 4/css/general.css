@@ -1,3 +1,4 @@
+/*---------------General---------------*/
 html, body {
     margin: 0;
     height: 100dvh;
@@ -12,27 +13,23 @@ body > * {
     display: flex;
     width: 100dvw;
 }
+* {
+    color: #1a1a1a;
+    font-size: min(1dvw, 2dvh);
+    font-family: "Cinzel", cursive;
+    font-weight: 400;
+}
 body > header, body > footer {
     box-shadow: inset 0 0 0 min(0.1dvh, max(0.1dvw, 0.1dvh)) #1a1a1a;
 }
-header {
+
+
+/*---------------Header---------------*/
+body > header {
     height: 10dvh;
     background-color: white;
 }
-main {
-    width: 70dvw;
-    height: 45dvh;
-    margin: 15dvh 15dvw;
-}
-footer {
-    height: 15dvh;
-    background-color: #1a1a1a;
-}
-* {
-    font-size: 1vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-header > * {
+body > header > * {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,14 +68,17 @@ div.search::after {
 }
 #tooltip {
     display: none;
-    /* display: flex; */
     position: absolute;
-    margin-top: 20dvh;
     flex-flow: column wrap;
-    width: 5dvw;
-    height: 11dvh;
+    justify-content: space-evenly;
+
+    width: fit-content;
+    height: fit-content;
+
+    margin-top: 20dvh;
     padding: 1dvh 1dvw;
-    border: 0.1dvw solid #1a1a1a;
+
+    box-shadow: inset 0 0 0 0.1dvw #1a1a1a;
     background-color: white;
     gap: 1dvh;
 
@@ -91,3 +91,78 @@ div.search::after {
     box-shadow: inset 0 0 0 min(0.1dvh, max(0.1dvw, 0.1dvh)) #1a1a1a;
     background-color: white;
 }
+
+/*---------------Main---------------*/
+body > main {
+    height: 75dvh;
+}
+div.main {
+    width: 100%;
+    margin: 5dvh 15dvw 5dvh 15dvw;
+    display: flex;
+    flex-flow: row wrap;
+}
+div.main > * {
+    width: 100%;
+}
+div.main header {
+    margin: 0 10% 0 0;
+    height: 25%;
+}
+div.main header h1 {
+    font-size: min(3dvw, 6dvh);
+}
+div.main header p {
+    color: #2a2a2a;
+}
+div.main header > * {
+    margin: 0;
+}
+div.main main {
+    display: flex;
+    justify-content: center;
+    height: 75%;
+    flex-flow: column wrap;
+}
+section.service {
+    width: 30%;
+    height: 90%;
+    box-shadow: inset 0 0 0 min(0.1dvh, max(0.1dvw, 0.1dvh)) #1a1a1a;
+}
+
+/*---------------Footer---------------*/
+footer {
+    display: flex;
+    height: 15dvh;
+    background-color: #1a1a1a;
+}
+footer * {
+    display: flex;
+    flex-flow: row nowrap;
+    color: white;
+}
+div.logo {
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+nav.options {
+    width: 60%;
+}
+button.option {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2dvw;
+    border: none;
+    background-color: transparent;
+}
+button.option:hover {
+    background-color: #2a2a2a;
+}
+img.logo {
+    width: min(8dvw, 8dvh);
+    aspect-ratio: 1;
+}
+
+
