@@ -12,8 +12,8 @@ body > * {
     display: flex;
     width: 100dvw;
 }
-body > *:first-child, body > *:last-child {
-    box-shadow: inset 0 0 0 0.05vw #1a1a1a;
+body > header, body > footer {
+    box-shadow: inset 0 0 0 min(0.1dvh, max(0.1dvw, 0.1dvh)) #1a1a1a;
 }
 header {
     height: 10dvh;
@@ -29,38 +29,65 @@ footer {
     background-color: #1a1a1a;
 }
 * {
+    font-size: 1vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header > * {
     display: flex;
-    justify-content: center;
-}
-
-div.search {
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1em;
+    align-items: center;
+    width: 50dvw;
+}
+div.search {
+    padding: 1dvh 1dvw;
     position: relative;
 }
 #search {
-    width: 12em;
-    height: 1.5em;
+    width: 12dvw;
+    height: 3dvh;
     border: none;
-    padding: 0.5em 2em 0.5em 0.5em;
-    box-shadow: inset 0 0 0 0.05em #1a1a1a;
-    border-radius: 2em;
+    padding: 1dvh 2dvw 1dvh 1dvw;
+    box-shadow: inset 0 0 0 min(0.1dvh, max(0.1dvw, 0.1dvh)) #1a1a1a;
+    border-radius: max(2dvw, 5dvh);
 }
 div.search::after {
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 2dvh;
+    height: 2dvh;
 
     content: '';
     background-image: url('https://xXx-GloriousPhoenix-xXx.github.io/Uni-Grade2-Web/Work%204/data/search.png');
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    left: 11.5em
+    transform: translateY(75%);
+    right: 1.75dvw;
 }
+#menu {
+    width: 1.5em;
+    height: 1.5em;
+    transition: transform 0.5s ease;
+}
+#tooltip {
+    display: none;
+    /* display: flex; */
+    position: absolute;
+    margin-top: 20dvh;
+    flex-flow: column wrap;
+    width: 5dvw;
+    height: 11dvh;
+    padding: 1dvh 1dvw;
+    border: 0.1dvw solid #1a1a1a;
+    background-color: white;
+    gap: 1dvh;
 
+    border-radius: max(0.5dvw, 2dvh);
+}
+#tooltip > button {
+    height: 3dvh;
+    border-radius: max(2dvw, 5dvh);
+    border: none;
+    box-shadow: inset 0 0 0 min(0.1dvh, max(0.1dvw, 0.1dvh)) #1a1a1a;
+    background-color: white;
+}
