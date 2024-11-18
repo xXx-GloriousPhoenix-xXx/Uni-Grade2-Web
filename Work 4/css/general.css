@@ -31,5 +31,36 @@ footer {
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+header > * {
+    display: flex;
+    justify-content: center;
+}
 
-/*PC*/
+div.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    position: relative;
+}
+#search {
+    width: 12em;
+    height: 1.5em;
+    border: none;
+    padding: 0.5em 2em 0.5em 0.5em;
+    box-shadow: inset 0 0 0 0.05em #1a1a1a;
+    border-radius: 2em;
+}
+div.search::after {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+
+    content: '';
+    background-image: url('https://xXx-GloriousPhoenix-xXx.github.io/Uni-Grade2-Web/Work%204/data/search.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 11.5em
+}
+
