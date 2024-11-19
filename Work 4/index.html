@@ -13,77 +13,79 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sacramento&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
     <title>Arcane Tarot</title>
-    <link rel="icon" href="data/tarot.png" type="image/x-icon">
+    <link rel="icon" href="data/general/tarot.png" type="image/x-icon">
+    <link rel="shortcut icon" href="data/general/tarot.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <form class="search">
-            <div class="search">
+        <div class="search">
+            <div class="input-wrapper">
                 <input type="text" placeholder="Searching..." id="search">
             </div>
-        </form>
-        <div class="profile-menu">
-            <img src="data/general/profile-menu.png" alt="profile-menu" id="profile-menu">
-            <div id="tooltip">
-                <button>Profile</button>
-                <button>Settings</button>
-                <button>Exit</button>
-            </div>
+        </div>
+        <div class="menu profile-menu">
+            <img src="data/general/profile-menu.png" alt="profile-menu" id="profile-menu" class="menu">
         </div>
     </header>
     <main>
-        <div class="main">
-            <header>
-                <h1 >
+        <div class="content">
+            <div class="content-header">
+                <h1 class="content-header">
                     Popular services
                 </h1>
-                <p>
+                <p class="content-header">
                     As a trusted guide in the world of Tarot, 
-                    we offer transformative insights and personalized readings 
-                    to help you navigate life's journey 
-                    with clarity, confidence, and purpose. 
+                    we offer transformative insights 
+                    and personalized readings to help you 
+                    navigate life's journey with clarity, confidence, and purpose. 
                     Discover the wisdom of the cards and unlock the answers you seek.
                 </p>
-            </header>
-            <main>
+            </div>
+            <div class="content-wrapper">
                 <section class="service">
-                    <img src="data/content/relationship.png" alt="personal spread">
-                    <h2>Personal spread</h2>
-                    <p>
+                    <img src="data/content/relationship.png" alt="service1img" class="service">
+                    <h2 class="service">
+                        Personal spread                    
+                    </h2>
+                    <p class="service">
                         I offer personalized tarot card readings to help resolve your issues. 
-                        Depending on the situation, 
-                        I use different spreads to help you gain clarity and guidance.
+                        Depending on the situation, I use different spreads to help you gain clarity and guidance.
                     </p>
                 </section>
                 <section class="service">
-                    <img src="data/content/consulting.jpg" alt="consulting">
-                    <h2>Consulting</h2>
-                    <p>
+                    <img src="data/content/consulting.jpg" alt="service2img" class="service">
+                    <h2 class="service">
+                        Consulting
+                    </h2>
+                    <p class="service">
                         If you are looking for professional help in difficult life situations, 
-                        I offer tarot consultations. We will discuss your problems and 
-                        I will help you find the right path using the ancient wisdom of the Tarot and intuition.
+                        I offer tarot consultations. 
+                        We will discuss your problems and I will help you find the right path 
+                        using the ancient wisdom of the Tarot and intuition.
                     </p>
                 </section>
                 <section class="service">
-                    <img src="data/content/teaching.jpg" alt="teaching">
-                    <h2>Teaching</h2>
-                    <p>
+                    <img src="data/content/teaching.jpg" alt="service3img" class="service">
+                    <h2 class="service">
+                        Teaching
+                    </h2>
+                    <p class="service">
                         Want to learn Tarot? I offer courses and workshops for beginners and advanced. 
-                        In my classes you will learn the basics of cards, different types of layouts 
-                        and learn how to use Tarot for personal needs or professional practice.
+                        In my classes you will learn the basics of cards, 
+                        different types of layouts and learn how to use Tarot for personal needs or professional practice.
                     </p>
                 </section>
-            </main>
+            </div>
         </div>
     </main>
     <footer>
         <div class="logo">
-            <img src="data/general/tarot.png" alt="logo" class="logo">
+            <img src="data/general/tarot.png" alt="logo" id="logo">
         </div>
-        <nav class="options">
+        <div class="page-menu">
             <button class="option">Home</button>
             <button class="option">1</button>
             <button class="option">2</button>
@@ -93,12 +95,11 @@
             <button class="option">6</button>
             <button class="option">7</button>
             <button class="option">8</button>
-            <button class="option">9</button>          
-        </nav>
-        <div class="page-menu">
-            <img src="data/general/page-menu.png" alt="page-menu" id="page-menu">
+            <button class="option">9</button>
+            <div>
+                <img src="data/general/page-menu.png" alt="page-menu" id="page-menu" class="menu">
+            </div>
         </div>
     </footer>
-    <script src="js/index.js"></script>
 </body>
 </html>
