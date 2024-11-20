@@ -31,28 +31,56 @@
     }
     section > div {
         flex-flow: row nowrap;
-        height: 50%;
+        height: 100%;
     }
-    section.section-1 > div {
-        width: 50%;
+    section.section-1 {
+        flex-flow: column nowrap;
     }
-    section.section-2 > div {
+    section.section-1 > div.section-1:last-child {
+        justify-content: center;
+        gap: calc((100% - 27.5em) / 6);
+    }
+    section.section-2 {
+        flex-flow: column nowrap;
+        align-items: center;
+        /* justify-content: center; */
+        gap: 2%;
+        justify-content: flex-start;
+        padding-top: 1.5%;
+
+    }
+    section.section-2 > button {
+        border-radius: 2vw;
         width: 100%;
     }
-    section.section-1 > div > img {
-        width: min(20%, calc(250dvh/18));
-        height: auto;
+    div.input-section {
+        width: 100%;
+        flex-flow: row nowrap;
     }
-    section.section-2 > div > img {
-        width: min(20%, calc(250dvh/18));
-        height: auto;
+    input.section-1, #area {
+        width: 4.5em;
+        height: 1.5em;
+    }
+    #calculate, #clear {
+        width: 5.5em;
+        height: 2.5em;
+    }
+    #area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    input.section-1, #calculate, #clear, #area {
+        background-color: black;
+        border: none;
+        border-radius: 1em;
+        padding: 0.5em;
     }
 
     div.item-x {
         padding-left: 3.5vw;
     }
-    button#github {
-        /* width: 30%; */
+    #github {
         width: 9vw;
         height: 40%;
         border-radius: 1vw;
@@ -61,10 +89,10 @@
         justify-content: center;
         align-items: center;
     }
-    button#github > span {
+    #github > span {
         width: 35%;
     }
-    button#github > span:last-child {
+    #github > span:last-child {
         background-color: orange;
         padding: 0.5vw;
         border-radius: 0.5vw;
@@ -89,5 +117,8 @@
         padding: 0.5vw;
         border-radius: 0.5vw;
         color: black;
+    }
+    div.item-text span + span {
+        padding: 0 0.25em;
     }
 }

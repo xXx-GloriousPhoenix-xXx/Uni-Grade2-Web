@@ -34,8 +34,8 @@
     div.item-x {
         padding-left: 5vw;
     }
-    button#github {
-        width: 100%;
+    #github {
+        width: 70%;
         height: 12dvw;
         border-radius: 3vw;
         display: flex;
@@ -43,7 +43,7 @@
         justify-content: center;
         align-items: center;
     }
-    button#github > span {
+    #github > span {
         width: 50%;
     }
     button#github > span:last-child {
@@ -55,7 +55,7 @@
 
     div.author {
         width: 90%;
-        height: 20%;
+        height: 30%;
         border-radius: 2vw;
         display: flex;
         flex-flow: row nowrap;
@@ -67,7 +67,7 @@
     }
     div.author > span {
         display: flex;
-        font-size: 2vw;
+        font-size: 4vw;
         flex-flow: row nowrap;
     }
     div.author > span:first-child {

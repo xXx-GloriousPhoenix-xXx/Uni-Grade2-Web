@@ -9,6 +9,12 @@
             "navbar   lsection  rsection"
             "footer   footer    footer  ";
     }
+    div.item-text {
+        width: 70%;
+    }
+    div.item-special {
+        width: 30%
+    }
 }
 
 /*---------------Tablet & Phone---------------*/
@@ -28,5 +34,8 @@
     }
     section > div {
         width: 100%;
+    }
+    div.item-text, div.item-special {
+        width: 50%;
     }
 }
