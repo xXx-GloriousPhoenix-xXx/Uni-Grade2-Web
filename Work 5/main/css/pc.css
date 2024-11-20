@@ -121,4 +121,7 @@
     div.item-text span + span {
         padding: 0 0.25em;
     }
+    section.section-2 {
+        flex-flow: column nowrap;
+    }
 }
