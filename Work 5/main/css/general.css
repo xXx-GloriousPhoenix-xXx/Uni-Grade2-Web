@@ -177,3 +177,14 @@ label.bold {
     align-items: center;
     justify-content: center;
 }
+
+
+
+
+form.generator {
+
+}
+input.generator {
+    color: black;
+    width: 4em;
+}

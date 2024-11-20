@@ -113,7 +113,7 @@ async function start() {
         button.style.backgroundImage = `url('Main/data/planet_${i + 1}.png')`;
         button.addEventListener("click", () => {
             let postfix = '';
-            if (i + 1 === 3) {
+            if ([3, 5].includes(i + 1)) {
                 postfix = '/main/';
             }
             document.location.href = `https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work%20${i + 1}${postfix}`;
