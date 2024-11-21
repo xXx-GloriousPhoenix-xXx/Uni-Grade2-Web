@@ -1,5 +1,5 @@
 /*---------------PC---------------*/
-@media (width >= 1025px) { /*>=1366px*/
+@media (width >= 1025px) {
     body {
         height: 100dvh;
     }
@@ -23,7 +23,6 @@
     div.item-text > span {
         font-size: min(2.5vw, 5vh);
     }
-    /**/
     section {
         flex-flow: column wrap;
     }
@@ -41,7 +40,6 @@
     section.section-2 {
         flex-flow: column nowrap;
         align-items: center;
-        /* justify-content: center; */
         gap: 2%;
         justify-content: flex-start;
 
@@ -53,11 +51,6 @@
         width: 100%;
         flex-flow: row nowrap;
     }
-
-
-
-
-
     div.item-x {
         padding-left: 3.5vw;
     }
@@ -79,9 +72,7 @@
         border-radius: 0.5vw;
         color: black;
     }
-
     div.author {
-        /* width: 65%; */
         width: 19.5vw;
         height: 40%;
         border-radius: 1vw;
@@ -105,9 +96,7 @@
     section.section-2 {
         flex-flow: column nowrap;
     }
-
     div.calculate {
         gap: calc((500% / 3 - 27.5em) / 5);
     }
-
 }
