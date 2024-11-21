@@ -1,8 +1,8 @@
 /*---------------Phone---------------*/
 @media (width <= 448px) {
     body {
-        grid-template-rows: 14dvh 49dvh 14dvh 99dvh 49dvh 14dvh;
-        height: 245dvh;
+        grid-template-rows: 14dvh 49dvh 14dvh 69dvh 59dvh 14dvh;
+        height: 225dvh;
     }
     body > * {
         border-radius: 6vw;
@@ -76,4 +76,5 @@
         border-radius: 0.5vw;
         color: black;
     }
+
 }

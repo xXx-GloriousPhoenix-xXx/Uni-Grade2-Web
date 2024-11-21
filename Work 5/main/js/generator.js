@@ -76,8 +76,19 @@ function showContent() {
         return;
     }
     current = parseFloat(current);
+    let quantity = quantityField.value;
+    if (quantity === '') {
+        contentRow.value = '';
+        return;
+    }
+    if (!isNatural(quantity)) {
+        contentRow.value = '';
+        markAsError(currentField);
+        return;
+    }
+    quantity = parseFloat(quantity);
     const localQuantity = parseFloat(localStorage.getItem('quantity'));
-    if (current > localQuantity) {
+    if (current > localQuantity && current > quantity) {
         contentRow.value = '';
         markAsError(currentField);
         return;
@@ -107,17 +118,21 @@ function gen() {
     quantity = parseFloat(quantity);
     const tbody = document.createElement('tbody');
     for(var i = 1; i <= quantity; i++) {
+        const value = localStorage.getItem(`row-${i}`);
+        if (value === '') {
+            continue;
+        }
         const row = document.createElement('tr');
         const cell = document.createElement('td');
-        const value = localStorage.getItem(`row-${i}`);
 
         cell.textContent = value;
         row.appendChild(cell);
         tbody.appendChild(row);
     }
     table.appendChild(tbody);
-
+    edgeCorrection();
     table.style.display = 'flex';
+    table.style.justifyContent = (tableContainer.scrollHeight > tableContainer.clientHeight ? 'normal' : 'center');
     localStorage.setItem('autoshow', 'true');
 }
 function autoshow() {
@@ -125,7 +140,22 @@ function autoshow() {
     if (!toShow) {
         return;
     }
-    gen();
+    if (toShow === 'true') {
+        gen();
+    }
+}
+function edgeCorrection() {
+    const rows = Array.from(table.querySelectorAll('tbody tr'));
+    if (rows.length === 0) {
+        return;
+    }
+    if (rows.length === 1) {
+        rows[0].firstChild.style.borderRadius = '1em';
+    }
+    else {
+        rows[0].firstChild.style.borderRadius = '1em 1em 0 0';
+        rows[rows.length - 1].firstChild.style.borderRadius = '0 0 1em 1em';
+    }
 }
 
 const tipOverlay = document.getElementById('tip-overlay'); 
@@ -133,6 +163,7 @@ const quantityField = document.getElementById('rows');
 const currentField = document.getElementById('row');
 const contentRow = document.getElementById('row-content');
 const table = document.getElementById('gen-table');
+const tableContainer = document.getElementById('item-2');
 const hideElements = Array.from(document.getElementsByClassName('page'));
 
 quantityField.addEventListener('change', showContent);

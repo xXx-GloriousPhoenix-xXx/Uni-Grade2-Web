@@ -1,8 +1,8 @@
 /*---------------Tablet---------------*/
 @media (449px <= width <= 1024px) {
     body {
-        height: 225dvh;
-        grid-template-rows: 14dvh 49dvh 14dvh 79dvh 49dvh 14dvh;
+        height: 245dvh;
+        grid-template-rows: 14dvh 49dvh 14dvh 79dvh 69dvh 14dvh;
     }
     body > * {
         border-radius: 4vw;
@@ -78,5 +78,11 @@
         padding: 0.25vw;
         border-radius: 0.5vw;
         color: black;
+    }
+    input.section-1,
+    #calculate,
+    #clear,
+    #area {
+        width: 7em;
     }
 }

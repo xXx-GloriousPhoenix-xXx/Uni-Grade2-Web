@@ -15,5 +15,9 @@ ids.forEach(id => {
             writeArea(element);
             event.stopPropagation();
         });
+        element.addEventListener('click', (event) => {
+            writeArea(element);
+            event.stopPropagation();
+        });
     }
 });
