@@ -30,34 +30,35 @@
         </div>
     </header>
     <nav id="item-2">
-        <main class="page-marking">
-            <button id="table">Table</button>
-            <button id="grid">Grid</button>
-            <button id="flex">Flex</button>
+        <table id="gen-table"></table>
+        <main class="page page-marking">
+            <button class="page" id="table">Table</button>
+            <button class="page" id="grid">Grid</button>
+            <button class="page" id="flex">Flex</button>
         </main>
-        <button id="python">Python</button>
-        <button id="c">C</button>
-        <button id="cpp">C++</button>
-        <button id="cs">C#</button>
-        <button id="html">HTML</button>
+        <button class="page" id="python">Python</button>
+        <button class="page" id="c">C</button>
+        <button class="page" id="cpp">C++</button>
+        <button class="page" id="cs">C#</button>
+        <button class="page" id="html">HTML</button>
     </nav>
     <header class="header-2" id="item-3">
         Languages & Environments
     </header>   
     <section class="section-1" id="item-4">
         <div class="section-1 input-section">
-            <input type="text" placeholder="Number..." class="section-1" id="input-1">
-            <input type="text" placeholder="Number..." class="section-1" id="input-2">
-            <input type="text" placeholder="Number..." class="section-1" id="input-3">
-            <input type="text" placeholder="Number..." class="section-1" id="input-4">
-            <input type="text" placeholder="Number..." class="section-1" id="input-5">
+            <input type="text" placeholder="Number" class="section-1" id="input-1">
+            <input type="text" placeholder="Number" class="section-1" id="input-2">
+            <input type="text" placeholder="Number" class="section-1" id="input-3">
+            <input type="text" placeholder="Number" class="section-1" id="input-4">
+            <input type="text" placeholder="Number" class="section-1" id="input-5">
         </div>
         <div class="section-1">
-            <input type="text" placeholder="Number..." class="section-1" id="input-6">
-            <input type="text" placeholder="Number..." class="section-1" id="input-7">
-            <input type="text" placeholder="Number..." class="section-1" id="input-8">
-            <input type="text" placeholder="Number..." class="section-1" id="input-9">
-            <input type="text" placeholder="Number..." class="section-1" id="input-10">
+            <input type="text" placeholder="Number" class="section-1" id="input-6">
+            <input type="text" placeholder="Number" class="section-1" id="input-7">
+            <input type="text" placeholder="Number" class="section-1" id="input-8">
+            <input type="text" placeholder="Number" class="section-1" id="input-9">
+            <input type="text" placeholder="Number" class="section-1" id="input-10">
         </div>
         <div class="section-1 input-section">
             <div class="section-1 calculate">
@@ -81,19 +82,46 @@
             </label>
         </div>
         <form class="generator">
-            <input type="text" placeholder="Rows..." class="generator">
-            <!-- <input type="text" placeholder="Rows..." class="generator">
-            <input type="text" placeholder="Rows..." class="generator">
-            <input type="text" placeholder="Rows..." class="generator">
-            <input type="text" placeholder="Rows..." class="generator">
-            <input type="text" placeholder="Rows..." class="generator">
-            <input type="text" placeholder="Rows..." class="generator">
-            <input type="text" placeholder="Rows..." class="generator">
-            <input type="text" placeholder="Rows..." class="generator">
-            <input type="text" placeholder="Rows..." class="generator">
-            <input type="text" placeholder="Rows..." class="generator">
-            <input type="text" placeholder="Rows..." class="generator"> -->
-
+            <div class="generator">
+                <button type="button" class="generator" id="tip">?</button>
+                <div id="tip-overlay">
+                    <p class="tip-overlay">
+                        Rows - quantity of rows in table. 
+                        If it's not present in local storage - gets written in local storage.
+                        If it's present in local storage, but overwritten: 
+                            Greater than present - gets overwritten in local storage
+                            and adds records of additional rows with empty content, 
+                            Less than present - gets overwritten in local storage 
+                            and all the content after given quantity gets cleared.
+                        If not given:
+                            If it's present in local storage - stored is used.
+                            If it's not present in local storage - denies content setting.
+                    </p>
+                    <p class="tip-overlay">
+                        Row - current row number (Indexing responds natural numbers).
+                        When filled, shows in text area content of current row.
+                        If not given - Denies content setting.
+                    </p>
+                    <p class="tip-overlay">
+                        Set - Updates quantity of rows in table.
+                        Assigns text area content to current row of table in local storage.
+                    </p>
+                    <p class="tip-overlay">
+                        Gen - Creates table from local storage data and displays in block-2.
+                    </p>
+                </div>
+                <input type="text" placeholder="Rows" class="generator" id="rows">
+            </div>
+            <div class="generator">
+                <div class="general row-set">
+                    <input type="text" placeholder="Row" class="=generator" id="row">
+                    <button type="button" class="generator" id="set">Set</button>
+                    <button type="button" class="generator" id="gen">Gen</button> 
+                </div>
+                <div class="generator">
+                    <textarea placeholder="Row content" class="generator" id="row-content"></textarea>
+                </div>
+            </div>
         </form>
     </section>
     <footer id="item-6">
@@ -117,10 +145,11 @@
         </div>
     </footer>
     <script src="js/index.js" defer></script> <!--Been-->
+    <script src="js/generator.js" defer></script> <!--Done--> 
     <script src="js/swap.js" defer></script> <!--Done-->
     <script src="js/area.js" defer></script> <!--Done--> <!--ToFix github & author-->
     <script src="js/calculate.js" defer></script> <!--Done-->
-    <script src="js/bold.js" defer></script> <!--Done--> 
-    <script src="js/generator.js" defer></script> 
+    <script src="js/bold.js" defer></script> <!--Done-->
+
 </body>
 </html>

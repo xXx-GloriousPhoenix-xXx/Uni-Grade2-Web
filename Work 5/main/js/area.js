@@ -7,11 +7,13 @@ const ids = ['item-1', 'item-2', 'item-3', 'item-4', 'item-5', 'item-6', 'github
 ids.forEach(id => {
     const element = document.getElementById(id);
     if (!element) {
-        output.style.backgroundColor = 'orange';
-        output.style.color = 'black';
+        markAsError(output);
         return;
     }
     else {
-        element.addEventListener('mouseover', () => writeArea(element));
+        element.addEventListener('mouseover', (event) => {
+            writeArea(element);
+            event.stopPropagation();
+        });
     }
 });

@@ -70,12 +70,15 @@
         align-items: center;
         justify-content: center;
     }
-    input.section-1, #calculate, #clear, #area {
+    input.section-1, #area {
         background-color: black;
+    }
+    input.section-1, #area, #calculate, #clear {
         border: none;
         border-radius: 1em;
         padding: 0.5em;
     }
+
 
     div.item-x {
         padding-left: 3.5vw;
