@@ -3,12 +3,10 @@ function xyswap() {
     let y = document.getElementsByClassName("item-y")[0];
 
     if (!x || !y) {
-        swapButton.style.backgroundColor = 'orange';
-        swapButton.style.color = 'black';
+        markAsError(swapButton);
     }
     else {
-        swapButton.style.backgroundColor = 'black';
-        swapButton.style.color = 'white';
+        markAsValid(swapButton);
 
         const xparent = x.parentNode;
         const yparent = y.parentNode;

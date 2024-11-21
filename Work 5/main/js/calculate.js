@@ -1,25 +1,20 @@
 function calculate() {
     const inputs = Array.from(document.querySelectorAll('[id^="input-"]'));
     if (inputs.length === 0) {
-        calculateButton.style.backgroundColor = 'orange';
-        calculateButton.style.color = 'black';
+        markAsError(calculateButton)
         return;
     }
-
-    calculateButton.style.backgroundColor = 'black';
-    calculateButton.style.color = 'white';
+    markAsValid(calculateButton);
 
     let values = inputs.map(input => {
-        input.style.backgroundColor = "black";
-        input.style.color = "white";
+        markAsValid(input);
         const value = input.value;
         if (!value) {
             return NaN;
         }
         else {
             if (!validate(value)) {
-                input.style.backgroundColor = 'orange';
-                input.style.color = 'black';
+                markAsError(input);
                 return NaN;
             }
             else {
@@ -53,8 +48,6 @@ function clear() {
         return;
     }
     markAsValid(clearButton);
-    clearButton.style.backgroundColor = 'black';
-    clearButton.style.color = 'white';
     inputs.forEach(input => {
         input.value = '';
         markAsValid(input);

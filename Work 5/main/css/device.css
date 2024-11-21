@@ -15,7 +15,13 @@
     div.item-special {
         width: 30%
     }
+    #tip-overlay {
+        width: 30dvw;
+        height: 25dvh;
 
+        right: 25dvw;
+        bottom: 25dvh;
+    }
 }
 
 /*---------------Tablet & Phone---------------*/
@@ -76,5 +82,13 @@
     }
     #swap, div.bold {
         border-radius: 2em;
+    }
+    #tip-overlay {
+        width: 85dvw;
+        height: 25dvh;
+
+        left: 50%;
+        top: 15dvh;
+        transform: translateX(-50%);
     }
 }
