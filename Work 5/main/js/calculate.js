@@ -49,13 +49,16 @@ function validate(value)  {
 function clear() {
     const inputs = Array.from(document.querySelectorAll('[id^="input-"]'));
     if (inputs.length === 0) {
-        clearButton.style.backgroundColor = 'orange';
-        clearButton.style.color = 'black';
+        markAsError(clearButton);
         return;
     }
+    markAsValid(clearButton);
     clearButton.style.backgroundColor = 'black';
     clearButton.style.color = 'white';
-    inputs.forEach(input => input.value = '');
+    inputs.forEach(input => {
+        input.value = '';
+        markAsValid(input);
+    });
 }
 function setCookie(name, value, days) {
     const date = new Date();
