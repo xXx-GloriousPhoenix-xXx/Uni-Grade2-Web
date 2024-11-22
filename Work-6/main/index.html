@@ -3,10 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=object.html">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/device.css">
+    <link rel="stylesheet" href="css/pc.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/phone.css">
+    <link rel="stylesheet" href="css/screen.css">
+
     <title>My Hub</title>
 </head>
 <body>
-    
+    <header class="header-1">
+        <div class="item-special item-x">
+            <button id="github">
+                <span>Git</span>
+                <span>Hub</span>
+            </button>
+        </div>                
+        <div class="item-text">
+            <span>
+                My experience
+            </span>
+            <span>
+                and future plans
+            </span>
+        </div>
+    </header>
+    <nav>
+        <table id="gen-table"></table>
+        <main class="page page-marking">
+            <button class="page" id="table">Table</button>
+            <button class="page" id="grid">Grid</button>
+            <button class="page" id="flex">Flex</button>
+        </main>
+        <button class="page" id="python">Python</button>
+        <button class="page" id="c">C</button>
+        <button class="page" id="cpp">C++</button>
+        <button class="page" id="cs">C#</button>
+        <button class="page" id="html">HTML</button>
+    </nav>
+    <header class="header-2">
+        Languages & Environments
+    </header>   
+    <section class="section-1">
+
+    </section>
+    <section class="section-2" id="item-5">
+        <form class="generator">
+            <div class="generator short-field">
+                <button type="button" class="generator" id="tip">?</button>
+                <div class="tip-overlay" id="tip-overlay">
+                    <pre class="tip-overlay" id="tip-text"></pre>
+                </div>
+                <input type="text" placeholder="Row" class="=generator" id="row">
+                <button type="button" class="generator" id="set">Set</button>
+                <button type="button" class="generator" id="gen">Gen</button> 
+            </div>
+            <div class="generator long-field">
+                <input type="text" placeholder="Rows" class="generator" id="rows">
+                <textarea placeholder="Row content" class="generator" id="row-content"></textarea>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="item-text">
+            <span>
+                Made as work 6 for
+            </span>
+            <span>
+                Web Development
+            </span>
+        </div>
+        <div class="item-special item-y">
+            <div class="author">
+                <span>
+                    ІП-34
+                </span>
+                <span>
+                    Приходько Роман
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script src="js/valid-error-mark.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/generator.js" defer></script>
 </body>
 </html>

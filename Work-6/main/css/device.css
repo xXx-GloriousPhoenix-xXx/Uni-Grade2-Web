@@ -9,6 +9,19 @@
             "navbar   lsection  rsection"
             "footer   footer    footer  ";
     }
+    div.item-text {
+        width: 70%;
+    }
+    div.item-special {
+        width: 30%
+    }
+    #tip-overlay {
+        width: 30dvw;
+        height: 25dvh;
+
+        right: 25dvw;
+        bottom: 25dvh;
+    }
 }
 
 /*---------------Tablet & Phone---------------*/
@@ -28,5 +41,54 @@
     }
     section > div {
         width: 100%;
+    }
+    div.section-1 {
+        flex-flow: column wrap;
+    }
+    div.item-text, div.item-special {
+        width: 50%;
+    }
+    #item-4 > div.input-section {
+        width: 50%;
+        gap: 1em;
+    }
+    div.calculate-wrapper {
+        display: flex;
+        height: fit-content;
+        align-items: center;
+    }
+    div.calculate {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+    div.area {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #item-4 {
+        align-items:  center;
+    }
+    #item-5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    form.generator {
+        height: 14em;
+    }
+    #swap, div.bold {
+        border-radius: 2em;
+    }
+    #tip-overlay {
+        width: 85dvw;
+        height: 25dvh;
+
+        left: 50%;
+        top: 15dvh;
+        transform: translateX(-50%);
     }
 }

@@ -86,28 +86,26 @@
                 <button type="button" class="generator" id="tip">?</button>
                 <div id="tip-overlay">
                     <p class="tip-overlay">
-                        Rows - quantity of rows in table. 
-                        If it's not present in local storage - gets written in local storage.
-                        If it's present in local storage, but overwritten: 
-                            Greater than present - gets overwritten in local storage
-                            and adds records of additional rows with empty content, 
-                            Less than present - gets overwritten in local storage 
-                            and all the content after given quantity gets cleared.
-                        If not given:
-                            If it's present in local storage - stored is used.
-                            If it's not present in local storage - denies content setting.
+                        Rows: The number of rows in the table.
+                        If it's not present in local storage: The value is written to local storage.
+                        If it's present in local storage, but is overwritten:
+                            Greater than the present value: The value in local storage is overwritten, and additional rows with empty content are added.
+                            Less than the present value: The value in local storage is overwritten, and all content after the specified number of rows is cleared.
+                        If not provided:
+                            If it's present in local storage: The stored value is used.
+                            If it's not present in local storage: Content setting is denied.
                     </p>
                     <p class="tip-overlay">
-                        Row - current row number (Indexing responds natural numbers).
-                        When filled, shows in text area content of current row.
-                        If not given - Denies content setting.
+                        Row - current row number (Indexing starts from natural numbers).
+                        When provided, it shows the content of the current row in the text area.
+                        If not provided, it prevents content from being set.
                     </p>
                     <p class="tip-overlay">
-                        Set - Updates quantity of rows in table.
-                        Assigns text area content to current row of table in local storage.
+                        Set - Updates the number of rows in the table.
+                        Assigns the content of the text area to the current row in the table and stores it in local storage.
                     </p>
                     <p class="tip-overlay">
-                        Gen - Creates table from local storage data and displays in block-2.
+                        Gen - Creates a table from data in local storage and displays it in block-2.
                     </p>
                 </div>
                 <input type="text" placeholder="Rows" class="generator" id="rows">

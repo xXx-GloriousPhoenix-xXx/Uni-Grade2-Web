@@ -1,8 +1,8 @@
 /*---------------Tablet---------------*/
 @media (449px <= width <= 1024px) {
     body {
-        height: 225dvh;
-        grid-template-rows: 14dvh 49dvh 14dvh 79dvh 49dvh 14dvh;
+        height: 245dvh;
+        grid-template-rows: 14dvh 49dvh 14dvh 79dvh 69dvh 14dvh;
     }
     body > * {
         border-radius: 4vw;
@@ -37,8 +37,8 @@
     div.item-x {
         padding-left: 5vw;
     }
-    button#github {
-        width: 80%;
+    #github {
+        width: 60%;
         height: 7dvw;
         border-radius: 3vw;
         display: flex;
@@ -46,10 +46,10 @@
         justify-content: center;
         align-items: center;
     }
-    button#github > span {
+    #github > span {
         width: 40%;
     }
-    button#github > span:last-child {
+    #github > span:last-child {
         background-color: orange;
         padding: 0.1vw;
         border-radius: 1vw;
@@ -57,7 +57,7 @@
     }
 
     div.author {
-        width: 90%;
+        width: 60%;
         height: 30%;
         border-radius: 2vw;
         display: flex;
@@ -78,5 +78,11 @@
         padding: 0.25vw;
         border-radius: 0.5vw;
         color: black;
+    }
+    input.section-1,
+    #calculate,
+    #clear,
+    #area {
+        width: 7em;
     }
 }

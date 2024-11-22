@@ -15,17 +15,10 @@ const externalPageName = {
 };
 
 for (const id in pageName) {
-    const element = document.getElementById(id);
-    if (element) {
-        element.addEventListener("click", () => {
-            document.location.href = directory + pageName[id] + '.html';
-        });
-    }
-}
-const githubButton = document.getElementById("github");
-if (githubButton) {
-    githubButton.addEventListener("click", () => {
-        document.location.href = externalPageName["github"];
+    document.getElementById(id).addEventListener("click", () => {
+        document.location.href = directory + pageName[id] + '.html';
     });
 }
-
+document.getElementById("github").addEventListener("click", () => {
+    document.location.href = externalPageName["github"];
+});
