@@ -5,23 +5,23 @@
      - Main page; Collection of all works
   </li>
   <li>
-    <a href="https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work%201/">Work 1</a>
+    <a href="https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work-1/main/">Work 1</a>
      - Website from sample (HTML + CSS)
   </li>
   <li>
-    <a href="https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work%202/">Work 2</a>
+    <a href="https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work-2/main/">Work 2</a>
      - Variativity of main page - different marking: table, flex, grid
   </li>
   <li>
-    <a href="https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work%203/main/">Work 3</a>
+    <a href="https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work-3/main/">Work 3</a>
      - Mobile adaptation and Mail embed
   </li>
   <li>
-    <a href="https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work%204/">Work 4</a>
+    <a href="https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work-4/main/">Work 4</a>
      - Website from advanced sample (PC + Mobile)
   </li>
   <li>
-    <a href="https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work%205/main/">Work 5</a>
+    <a href="https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work-5/main/">Work 5</a>
      - Remake of Work 3 with various functionality: 
         <ul>
           <li>Item-x & Item-y Swap</li>
