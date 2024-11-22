@@ -1,0 +1,98 @@
+/*---------------General---------------*/
+body {
+    margin: 0;
+    background-color: #111;
+    display: grid;
+
+    gap: 0.5%;
+    justify-content: space-around;
+    align-content: space-evenly;
+}
+body > *:not(script) {
+    display: flex;
+    background-color: #222;
+}
+header.header-1 {
+    grid-area: header-1;
+}
+header {
+    align-items: center;
+    justify-content: center;
+}
+nav {
+    grid-area: navbar;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    padding: 0 2%;
+}
+nav > button, main.page-marking {
+    height: 15%;
+}
+main {
+    display: flex;
+}
+main > button {
+    width: calc(100% / 3);
+    height: 100%;
+}
+button {
+    border: none;
+    background-color: black;
+    cursor: pointer;
+}
+nav button:hover, nav button:active {
+    background-color: orange;
+    color: black;
+}
+header.header-2 {
+    grid-area: header-2;
+}
+section.section-1 {
+    grid-area: lsection;
+}
+section.section-2 {
+    grid-area: rsection;
+}
+footer {
+    grid-area: footer;
+    align-items: center;
+    justify-content: center;
+}
+   
+header > div, footer > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+div.item-text {
+    width: 70%;
+    margin: 4vw;
+    text-align: center;
+}
+div.item-special {
+    width: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+div.item-x {
+    align-items: flex-start;
+}
+div.item-y {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+* {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+::-webkit-scrollbar {
+    scrollbar-width: none;
+}
+section > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
