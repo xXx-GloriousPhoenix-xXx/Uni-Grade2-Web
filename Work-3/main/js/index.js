@@ -16,7 +16,7 @@ const externalPageName = {
 
 for (const id in pageName) {
     document.getElementById(id).addEventListener("click", () => {
-        document.location.href = directory + name[id] + '.html';
+        document.location.href = directory + pageName[id] + '.html';
     });
 }
 document.getElementById("github").addEventListener("click", () => {
