@@ -96,8 +96,6 @@ function rotate() {
 }
 async function start() {
     const worksDone = await countWorks();
-    // console.log(worksDone);
-
     const buttonCount = worksDone;
     const radius = Math.min(container.offsetHeight, container.offsetWidth) / 2;
 
