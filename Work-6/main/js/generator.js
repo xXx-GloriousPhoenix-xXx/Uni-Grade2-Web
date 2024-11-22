@@ -10,7 +10,8 @@ function displayTip() {
     }
 }
 function initiateTip() {
-    fetch('F:\\Programmes\\Github\\Reps\\Uni-Grade2-Web\\Work-5 copy\\main\\txt\\tip.txt')
+    const path = 'https://xXx-GloriousPhoenix-xXx.github.io/Uni-Grade2-Web/Work-6/main/txt/tip.txt';
+    fetch(path)
     .then(response => {
         if (!response.ok) {
             throw new Error('File loading is failed');
@@ -18,7 +19,7 @@ function initiateTip() {
         return response.text();
     })
     .then(data => {
-        document.getElementById('output').textContent = data;
+        document.getElementById('tip-text').textContent = data;
     })
     .catch(error => {
         console.error('Error:', error);
