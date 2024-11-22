@@ -1,4 +1,4 @@
-const directory = "https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work-2/";
+const directory = "https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work-2/main/";
 const pageName = {
     table: "general-table",
     grid: "general-grid",
@@ -16,7 +16,7 @@ const externalPageName = {
 
 for (const id in pageName) {
     document.getElementById(id).addEventListener("click", () => {
-        document.location.href = directory + name[id] + '.html';
+        document.location.href = directory + pageName[id] + '.html';
     });
 }
 document.getElementById("github").addEventListener("click", () => {

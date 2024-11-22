@@ -1,4 +1,4 @@
-const directory = "https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work%202/";
+const directory = "https://xxx-gloriousphoenix-xxx.github.io/Uni-Grade2-Web/Work-2/main/";
 const pageName = {
     table: "general-table",
     grid: "general-grid",
