@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Hub</title>
+    <link rel="icon" type="image/x-icon" href="data/general/icon.png">
+
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/device.css">
     <link rel="stylesheet" href="css/pc.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/phone.css">
-    <link rel="stylesheet" href="css/screen.css">
-
-    <title>My Hub</title>
 </head>
 <body>
     <header class="header-1">
@@ -30,7 +31,6 @@
         </div>
     </header>
     <nav>
-        <table id="gen-table"></table>
         <main class="page page-marking">
             <button class="page" id="table">Table</button>
             <button class="page" id="grid">Grid</button>
@@ -46,7 +46,7 @@
         Languages & Environments
     </header>   
     <section class="section-1">
-
+        <!-- -->
     </section>
     <section class="section-2" id="item-5">
         <form class="generator">
@@ -55,13 +55,13 @@
                 <div class="tip-overlay" id="tip-overlay">
                     <pre class="tip-overlay" id="tip-text"></pre>
                 </div>
-                <input type="text" placeholder="Row" class="=generator" id="row">
+                <input type="text" placeholder="Item" class="generator" id="item">
                 <button type="button" class="generator" id="set">Set</button>
-                <button type="button" class="generator" id="gen">Gen</button> 
+                <button type="button" class="generator" id="show">Show</button> 
             </div>
             <div class="generator long-field">
-                <input type="text" placeholder="Rows" class="generator" id="rows">
-                <textarea placeholder="Row content" class="generator" id="row-content"></textarea>
+                <input type="text" placeholder="Items" class="generator" id="item-quantity">
+                <textarea placeholder="Item content" class="generator" id="item-content"></textarea>
             </div>
         </form>
     </section>
@@ -85,8 +85,10 @@
             </div>
         </div>
     </footer>
-    <script src="js/valid-error-mark.js"></script>
-    <script src="js/index.js"></script>
+    <script type="module" src="./import.js"></script>
+    <script src="js/link.js"></script>
+    <script src="js/mark.js"></script>
+    <script src="js/items.js"></script>
     <script src="js/generator.js" defer></script>
 </body>
 </html>

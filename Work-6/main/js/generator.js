@@ -25,103 +25,80 @@ function initiateTip() {
         console.error('Error:', error);
     });
 }
-function set() {
-    if (!quantityField || !currentField || !contentRow) {
-        return;
-    }
-    markAsValid(quantityField);
-    markAsValid(currentField);
-    let quantity = quantityField.value;
-    let localQuantity = localStorage.getItem('quantity');
-    if (isNatural(quantity) || localQuantity) {
-        if (isNatural(quantity)) {
-            quantity = parseFloat(quantity);
-            if (localQuantity) {
-                localQuantity = parseFloat(localQuantity);
-                if (quantity > localQuantity) {
-                    for (var i = localQuantity + 1; i <= quantity; i++) {
-                        localStorage.setItem(`row-${i}`, '');
-                    }
-                }
-                else if (quantity < localQuantity) {
-                    for (var i = quantity + 1; i <= localQuantity; i++) {
-                        localStorage.removeItem(`row-${i}`);
-                    }
-                }
-            }
-            else {
-                for (var i = 1; i <= quantity; i++) {
-                    localStorage.setItem(`row-${i}`, '');
-                }
-            }
-            localStorage.setItem('quantity', `${quantity}`);
-        }
-        else if (quantity !== ''){
-            markAsError(quantityField);
-        }
-        let current = currentField.value;   
-        if (isNatural(current)) {
-            localQuantity = parseFloat(localStorage.getItem('quantity'));
-            current = parseFloat(current);
-            if (current <= localQuantity) {
-                const content = contentRow.value;
-                localStorage.setItem(`row-${current}`, `${content}`);
-            }
-        }
-        else if (current !== '') {
-            markAsError(currentField);
-        }
-    }
-    else {
-        markAsError(quantityField);
-    }
-    showContent();
-}
 function isNatural(value) {
     const pattern = /^([1-9]\d*)$/;
     return pattern.test(value);
 }
-function showContent() {
-    if (!currentField || !quantityField || !contentRow) {
-        return;
+function CheckQF() {
+    markAsValid(quantityField);
+    let newQ = quantityField.value;
+    if (!isNatural(newQ)) {
+        if (newQ !== '') {
+            markAsError(quantityField);
+        }
+        return false;
     }
-    markAsValid(currentField);
-    let current = currentField.value;
-    if (current === '') {
-        contentRow.value = '';
-        return;
-    }
-    if (!isNatural(current)) {
-        contentRow.value = '';
-        markAsError(currentField);
-        return;
-    }
-    if (!localStorage.getItem('quantity')) {
-        contentRow.value = '';
-        return;
-    }
-    current = parseFloat(current);
-    let quantity = quantityField.value;
-    if (quantity === '') {
-        contentRow.value = '';
-        return;
-    }
-    if (!isNatural(quantity)) {
-        contentRow.value = '';
-        markAsError(currentField);
-        return;
-    }
-    quantity = parseFloat(quantity);
-    const localQuantity = parseFloat(localStorage.getItem('quantity'));
-    if (current > localQuantity && current > quantity) {
-        contentRow.value = '';
-        markAsError(currentField);
-        return;
-    }
-    contentRow.value = localStorage.getItem(`row-${current}`);
+    return parseInt(newQ);
 }
-function gen() {
-    //
+function CheckIF() {
+    markAsValid(itemField);
+    let newI = itemField.value;
+    if (!isNatural(newI)) {
+        if (newI !== '') {
+            markAsError(itemField);
+        }
+        return false;
+    }
+    return parseInt(newI);
+}
+function setQ() {
+    const result = CheckQF();
+    if (result === false) {
+        return false;
+    }
+    const newQ = result;
+    setQuantity(newQ);
+    return true;
+}
+function setI() {
+    const result = CheckIF();
+    if (result === false) {
+        return false;
+    }
+    const newI = result;
+    const currQ = getQuantity();
+    if (newI > currQ) {
+        markAsError(itemField);
+        return false;
+    }
+    const currC = contentField.value;
+    setItem(newI, currC);
+    return true;
+}
+function set() {
+    setQ();
+    setI();
+    showI();
+}
+function showI() {
+    const ifResult = CheckIF();
+    if (ifResult === false) {
+        return false;
+    }
+    const newI = ifResult;
+
+    const qfResult = CheckQF();
+    if (qfResult === false) {
+        contentField.value = '';
+    }
+    const currQ = getQuantity();
+    if (newI > currQ) {
+        markAsError(itemField);
+        return false;
+    }
+    const currC = getItem(newI);
+    contentField.value = currC;
+    return true;
 }
 
 const tipOverlay = document.getElementById('tip-overlay'); 
@@ -129,24 +106,23 @@ if (tipOverlay) {
     initiateTip();
     document.getElementById('tip').addEventListener('click', displayTip);
 }
-const quantityField = document.getElementById('rows');
+const quantityField = document.getElementById('item-quantity');
 if (quantityField) {
-    quantityField.addEventListener('change', showContent);
+    quantityField.addEventListener('change', showI);
 }
-const currentField = document.getElementById('row');
-if (currentField) {
-    currentField.addEventListener('change', showContent);
+const itemField = document.getElementById('item');
+if (itemField) {
+    itemField.addEventListener('change', showI);
 }
 const setButton = document.getElementById('set');
 if (setButton) {
     setButton.addEventListener('click', set);
 }
-const genButton = document.getElementById('gen');
-if (genButton) {
-    genButton.addEventListener('click', gen);
+const showButton = document.getElementById('show');
+if (showButton) {
+    showButton.addEventListener('click', show);
 }
 
-const contentRow = document.getElementById('row-content');
-const table = document.getElementById('gen-table');
-const tableContainer = document.getElementById('item-2');
+const contentField = document.getElementById('item-content');
+const preview = document.getElementById('preview');
 const hideElements = Array.from(document.getElementsByClassName('page'));
