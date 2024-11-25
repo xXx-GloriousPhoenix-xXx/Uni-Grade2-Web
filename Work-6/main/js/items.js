@@ -77,4 +77,4 @@ async function setItem(id, content) {
     client.query('UPDATE "Items" SET content = $1 WHERE id = $2', [content, id]);
     client.end();
     return true;
-}
+} 
