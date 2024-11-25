@@ -1,5 +1,16 @@
 {
+  "name": "work-6",
+  "version": "1.0.0",
+  "description": "<b>Work 5</b>\r <p>Work 3 modification - additional functional:</p>\r <ul>\r     <li>Item-x & Item-y Swap</li>\r     <li>Area of hovered on Item</li>\r     <li>Bold text for Item-5 checkbox. Local Storage.</li>\r     <li>Min & Max within inputs. Cookies.</li>\r     <li>Table generator in Item-2. Local Storage.</li>\r </ul>",
+  "main": "items.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@supabase/supabase-js": "^2.46.1"
+    "pg": "^8.13.1"
   }
 }
