@@ -53,7 +53,7 @@ div.mode {
     justify-content: space-between;
 }
 div.mode-name {
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: center;
 }
 div.mode, div.mode-name {
