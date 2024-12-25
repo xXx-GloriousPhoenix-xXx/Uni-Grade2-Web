@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/pc.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/phone.css">
+
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/set.css">
     <title>My Hub</title>
 </head>
 <body>
@@ -43,10 +46,33 @@
         Languages & Environments
     </header>   
     <section class="section-1">
-        <div></div>
+        <div class="carousel-content">
+                
+        </div>
     </section>
     <section class="section-2">
-        <div></div>
+        <div class="parameter">
+            <textarea id="item-background" placeholder="background"></textarea>
+            <textarea id="item-name" placeholder="name"></textarea>
+            <textarea id="item-description" placeholder="description"></textarea>
+        </div>
+        <div class="mode-wrapper">
+            <div class="mode-name">
+                <label for="item-add">add</label>
+                <label for="item-edit">edit</label>
+                <label for="item-delete">delete</label>
+            </div>
+            <div class="mode">
+                <input id="item-add" type="radio" name="mode">
+                <input id="item-edit" type="radio" name="mode">
+                <input id="item-delete" type="radio" name="mode">
+            </div>
+        </div>
+        <div class="control">
+            <input id="item-number" type="text" placeholder="number">
+            <button id="item-apply">✓</button>
+            <button id="item-hint">?</button>
+        </div>
     </section>
     <footer>
         <div class="item-text">

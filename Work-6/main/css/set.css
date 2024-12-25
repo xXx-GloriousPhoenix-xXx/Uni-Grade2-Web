@@ -1,0 +1,72 @@
+section.section-2 textarea,
+section.section-2 input[type="text"] {
+    width: 100%;
+    height: 1rem;
+    padding: 0.25rem;
+    resize: none;
+    white-space: pre-wrap;
+    overflow-y: auto;
+    border-radius: 2dvw;
+    text-align: center;
+}
+section.section-2 button {
+    border-radius: 50%;
+}
+section.section-2 button {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+section.section-2 input[type="radio"] {
+    width: 1rem;
+    height: 1rem;
+}
+section.section-2 > div {
+    display: flex;
+}
+div.parameter {
+    flex-flow: column nowrap;
+    width: calc(95% - 0.5rem);
+    justify-content: space-evenly;
+    height: 40%;
+}
+div.control {
+    width: 95%;
+}
+section.section-2 > div *:not(div):not(label) {
+    background-color: black;
+    border: none;
+}
+section.section-2 div {
+    display: flex;
+}
+#item-number {
+    width: 75%;
+}
+div.control {
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+div.mode {
+    justify-content: center;
+    justify-content: space-between;
+}
+div.mode-name {
+    justify-content: space-evenly;
+    text-align: center;
+}
+div.mode, div.mode-name {
+    flex-flow: column nowrap;
+    height: 100%;
+}
+div.mode-wrapper {
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 1%;
+    width: 95%;
+    height: 30%;
+}
+section.section-2 {
+    justify-content: space-evenly;
+}

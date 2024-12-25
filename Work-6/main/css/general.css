@@ -37,8 +37,11 @@ main > button {
 }
 button {
     border: none;
-    background-color: black;
     cursor: pointer;
+}
+nav button,
+header.header-1 button {
+    background-color: black;
 }
 nav button:hover, nav button:active {
     background-color: orange;
