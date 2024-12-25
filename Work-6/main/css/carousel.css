@@ -1,10 +1,7 @@
-div.edit-menu {
-    
-}
 #carousel {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 97%;
     height: 95%;
@@ -38,7 +35,7 @@ div.carousel-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40dvw;
+    width: 46dvw;
     height: 37.5dvh;
     overflow: hidden;
     background-color: #FFA50022;
