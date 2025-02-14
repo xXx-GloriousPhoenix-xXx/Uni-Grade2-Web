@@ -1,0 +1,12 @@
+@media (min-width: 768px) {
+    #main-img {
+        width: 60dvh;
+        aspect-ratio: 1;
+    }
+}
+@media (max-width: 767px) {
+    #main-img {
+        width: 80dvw;
+        aspect-ratio: 1;
+    }
+}
